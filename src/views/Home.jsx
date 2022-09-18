@@ -1,6 +1,7 @@
 import React from "react";
+import Footer from "../components/Footer";
 import "../styles/Globals.css";
-import "../styles/Home.css";
+import "../styles/views/Home.css";
 const Home = () => {
   return (
     <div className="app">
@@ -35,12 +36,6 @@ const Home = () => {
                 </div>
                 <div className="wwd-grid-card">
                   <h4>
-                    <span>Build trust</span> in innovative projects through
-                    certification, community and financial support
-                  </h4>
-                </div>
-                <div className="wwd-grid-card">
-                  <h4>
                     <span>Concentrate legal expertise</span> and resources to
                     solve legal ambiguity around asset tokenization
                   </h4>
@@ -52,9 +47,32 @@ const Home = () => {
                   </h4>
                 </div>
               </div>
+              <button className="memberbtn">Become a Member</button>
             </div>
           </div>
         </section>
+        <section className="embedded-video">
+          <div className="box">
+            <div className="ev-box">
+              <iframe
+                src="https://www.youtube.com/watch?v=oHKCwyUa2rg"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section className="join-real-world">
+          <div className="box">
+            <div className="jrw-section">
+              <h3 className="section-heading">Join the real world community</h3>
+              <p>
+                Start learning more, connect with DAO members and make your
+                contribution towards further tokenization of real world assets.
+              </p>
+            </div>
+          </div>
+        </section>
+        <Footer />
       </main>
     </div>
   );

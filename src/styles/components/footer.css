@@ -1,0 +1,157 @@
+footer {
+  width: 100%;
+  background-color: var(--main-dark);
+}
+.footer-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  padding: 5rem 0;
+}
+.footer-grid-card-2,
+.footer-grid-card-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.footer-grid-card-2 h6,
+.footer-grid-card-3 h6,
+.footer-grid-card-4 h6 {
+  font-size: 1.85rem;
+  color: var(--off-white);
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+.footer-grid-card-2 a,
+.footer-grid-card-3 a {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  transition: 0.25s;
+  margin: 0 0 1rem 0;
+  text-decoration: none;
+  position: relative;
+}
+.footer-grid-card-2 a::after,
+.footer-grid-card-3 a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 0);
+  transition: 0.35s;
+}
+.footer-grid-card-2 a:hover::after,
+.footer-grid-card-3 a:hover::after {
+  width: 100%;
+}
+.footer-grid-card-2 a:hover,
+.footer-grid-card-3 a:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer-grid-card-4 p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+}
+.footer-subscribe-box {
+  width: 100%;
+  margin: 5rem 0 2.5rem 0;
+  background-color: var(--off-white);
+  padding: 0.5rem 2.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+.footer-subscribe-box:hover {
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.footer-subscribe-box:focus-within {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+.footer-subscribe-box input {
+  width: 100%;
+  background-color: unset;
+  border: 0;
+  outline: 0;
+  padding: 1rem 2.5rem 1rem 0;
+  font-size: 1.65rem;
+  color: var(--main-dark);
+}
+.footer-subscribe-box input::placeholder {
+  color: var(--main-dark);
+}
+.footer-subscribe-box button {
+  background-color: unset;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 1.65rem;
+  color: var(--main-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer-icons-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-icons-box a {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--off-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem 0 0;
+  transition: 0.5s;
+}
+.footer-icons-box a svg {
+  width: 1.85rem;
+  transition: 0.5s;
+}
+.footer-icons-box a:hover {
+  transform: translate(0, -0.35rem);
+}
+@media screen and (max-width: 1250px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem 0;
+  }
+  .footer-grid-card-2 {
+    order: 3;
+  }
+  .footer-grid-card-3 {
+    order: 4;
+  }
+  .footer-grid-card-4 {
+    order: 2;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .footer-grid-card-2 {
+    order: 2;
+  }
+  .footer-grid-card-3 {
+    order: 3;
+  }
+  .footer-grid-card-4 {
+    order: 4;
+  }
+}
