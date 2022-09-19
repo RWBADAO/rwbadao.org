@@ -2,10 +2,30 @@ import React from "react";
 import Footer from "../components/Footer";
 import "../styles/Globals.css";
 import "../styles/views/Home.css";
+
+import TrustImg from "../assets/img/trust.png";
+import TeamworkImg from "../assets/img/teamwork.png";
+import LegalDocImg from "../assets/img/legal-document.png";
+import LogoImg from "../assets/img/logo.png";
+import LandxImg from "../assets/img/landx.png";
+import MakerImg from "../assets/img/maker.png";
+import TangibleImg from "../assets/img/tangible.png";
+import { FaTwitter, FaDiscord, FaGlobe } from "react-icons/fa";
+import { MdEast, MdWest } from "react-icons/md";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import Header from "../components/Header";
+
 const Home = () => {
   return (
     <div className="app">
       <main className="home-page">
+        <Header />
         <section className="hero-section">
           <div className="box">
             <div className="hero-section-content">
@@ -25,50 +45,118 @@ const Home = () => {
         </section>
         <section className="what-we-do">
           <div className="box">
-            <div className="wwd-section">
-              <h3 className="section-heading">WHAT WE DO</h3>
-              <div className="wwd-grid">
-                <div className="wwd-grid-card">
-                  <h4>
-                    <span>Build trust</span> in innovative projects through
-                    certification, community and financial support
-                  </h4>
-                </div>
-                <div className="wwd-grid-card">
-                  <h4>
-                    <span>Concentrate legal expertise</span> and resources to
-                    solve legal ambiguity around asset tokenization
-                  </h4>
-                </div>
-                <div className="wwd-grid-card">
-                  <h4>
-                    <span>Steer collaboration</span> of open technical standards
-                    to unlock greater liquidity, accessibility and transparency
-                  </h4>
+            <div className="wwd-content">
+              <div className="section-heading-box">
+                <div className="section-heading">
+                  <h3>what we do.</h3>
+                  <div></div>
                 </div>
               </div>
-              <button className="memberbtn">Become a Member</button>
+              <div className="wwd-grid">
+                <div className="wwd-line"></div>
+
+                <div className="wwd-grid-card">
+                  <h4>
+                    <span>Build trust</span> <br />
+                    <br /> Build trust in innovative projects through
+                    certification, community and financial support
+                  </h4>
+                  <div className="wwd-line"></div>
+                </div>
+                <div className="wwd-grid-card">
+                  <h4>
+                    <span>Concentrate legal expertise</span> <br />
+                    <br /> Concentrate legal expertise and resources to solve
+                    legal ambiguity around asset tokenization
+                  </h4>
+                  <div className="wwd-line"></div>
+                </div>
+                <div className="wwd-grid-card">
+                  <h4>
+                    <span>Steer collaboration</span> <br />
+                    <br /> Steer collaboration of open technical standards to
+                    unlock greater liquidity, accessibility and transparency
+                  </h4>
+                  <div className="wwd-line"></div>
+                </div>
+              </div>
+              <button className="blue-btn">Become a Member</button>
             </div>
           </div>
         </section>
-        <section className="embedded-video">
+        <section className="founding-members">
           <div className="box">
-            <div className="ev-box">
-              <iframe
-                src="https://www.youtube.com/watch?v=oHKCwyUa2rg"
-                frameborder="0"
-              ></iframe>
+            <div className="section-heading-box">
+              <div className="section-heading">
+                <h3>founding members.</h3>
+                <div></div>
+              </div>
+            </div>
+            <div className="fm-grid-box-con">
+              <div className="fm-grid-box">
+                <div className="fm-arrow-box fm-prev">
+                  <MdWest />
+                </div>
+                <div className="fm-grid-swiper">
+                  <Swiper
+                    slidesPerView={"3"}
+                    className="mySwiper"
+                    loop={true}
+                    navigation={{
+                      nextEl: ".fm-next",
+                      prevEl: ".fm-prev",
+                    }}
+                    pagination={true}
+                    modules={[Navigation, Pagination]}
+                  >
+                    <SwiperSlide>
+                      <div className="fm-img-box">
+                        <img src={LandxImg} alt="founding member img" />
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="fm-img-box">
+                        <img src={MakerImg} alt="founding member img" />
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="fm-img-box">
+                        <img src={TangibleImg} alt="founding member img" />
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+                </div>
+                <div className="fm-arrow-box fm-next">
+                  <MdEast />
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section className="join-real-world">
           <div className="box">
             <div className="jrw-section">
-              <h3 className="section-heading">Join the real world community</h3>
+              <div className="section-heading-box">
+                <div className="section-heading">
+                  <h3>Join the real world community.</h3>
+                  <div></div>
+                </div>
+              </div>
               <p>
                 Start learning more, connect with DAO members and make your
                 contribution towards further tokenization of real world assets.
               </p>
+              <div className="icons-box">
+                <a href="#">
+                  <FaTwitter />
+                </a>
+                <a href="#">
+                  <FaDiscord />
+                </a>
+                <a href="#">
+                  <FaGlobe />
+                </a>
+              </div>
             </div>
           </div>
         </section>

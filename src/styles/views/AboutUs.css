@@ -1,0 +1,10 @@
+.about-page {
+  width: 100%;
+  background-color: var(--main-dark);
+  position: relative;
+  min-height: 100vh;
+}
+.page-heading-section {
+  width: 100%;
+  padding: 22.5rem 0 0 0;
+}
