@@ -1,4 +1,4 @@
-import Page from "./views/Home";
+import Page from "./views/GetInvolved";
 
 function App() {
   return (
