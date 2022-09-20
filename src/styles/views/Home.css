@@ -202,7 +202,8 @@
   color: var(--white);
   font-weight: 300;
   text-align: center;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
 }
 .icons-box {
   width: 100%;
@@ -222,4 +223,38 @@
   margin: 0 2.5rem;
   font-size: 2.15rem;
   color: var(--white);
+}
+
+/* RESPONSIVENESS  */
+@media screen and (max-width: 1140px) {
+  .hero-left {
+    padding: 15rem 0 0 0;
+  }
+  .hero-left h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-section-content {
+    grid-template-columns: 1fr;
+  }
+  .hero-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-left h2 {
+    font-size: 2rem;
+  }
+  .hero-left h1 {
+    font-size: 4rem;
+  }
+  .hero-left {
+    padding: 0;
+  }
+  .wwd-grid-card h4 {
+    width: 100%;
+  }
 }

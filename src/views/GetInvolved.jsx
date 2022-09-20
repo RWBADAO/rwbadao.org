@@ -109,7 +109,7 @@ const GetInvolved = () => {
                   <div></div>
                 </div>
               </div>
-              <p>
+              <p className="p-p">
                 Membership rates are charged on a per annum basis, voting rights
                 and benefits expire if fees are not paid within a timely manner.
               </p>

@@ -16,165 +16,164 @@ const AboutUs = () => {
               <h2>about us.</h2>
               <div></div>
             </div>
-          </div>
-        </section>
-        <section className="text-content">
-          <div className="box">
-            <div className="text-content-box">
-              <h3>
-                <span></span> Mission<b>.</b>
-              </h3>
-              <br />
-              <p>
-                To support the transition of real world assets to tokenized
-                economies on decentralized blockchains.
-              </p>
-            </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> Philosophy<b>.</b>
-              </h3>
-              <br />
-              <p>
-                The real world blockchain association is set up to build shared
-                infrastructure resulting in collective benefit. We nurture a
-                community of developers, entrepreneurs and founders who have
-                aligned goals and common ideals.
-              </p>
-              <br />
-              <br />
-              <p>
-                {" "}
-                Through the association we are able to create an industry
-                network of thought leaders to push forward and realize our goals
-                of bringing real world assets on-chain.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                <b>To achieve our mission, our DAO will:</b>
-              </p>
-              <br />
-              <ul>
-                <li>
-                  Unite and represent a diverse mix of global crypto projects
-                  focussed on real-world assets
-                </li>
-                <li>
-                  Help set a better standard and brand for crypto – trust,
-                  transparency, auditing
-                </li>
-                <li>
-                  Legal expertise – concentrate expertise and resources, fight
-                  legal battles, help the cause
-                </li>
-                <li>
-                  Become a vehicle for investment of traditional finance into
-                  the blockchain space
-                </li>
-                <li>
-                  Highlight best practice in decentralized organization
-                  stewardship
-                </li>
-                <li>
-                  Take a leading role to support the collaboration of open
-                  technical standards
-                </li>
-                <li>
-                  Inspire, representative and support real-world causes that
-                  revolutionize industries
-                </li>
-              </ul>
-            </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> What are real world assets<b>?</b>
-              </h3>
-              <br />
-              <p>
-                Tokenization of real world assets involves the digital
-                representation of real world (usually physical) assets on a
-                blockchain.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                <b>Popular examples include:</b>
-              </p>
-              <br />
+            <section className="text-content">
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Mission<b>.</b>
+                </h3>
+                <br />
+                <p>
+                  To support the transition of real world assets to tokenized
+                  economies on decentralized blockchains.
+                </p>
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Philosophy<b>.</b>
+                </h3>
+                <br />
+                <p>
+                  The real world blockchain association is set up to build
+                  shared infrastructure resulting in collective benefit. We
+                  nurture a community of developers, entrepreneurs and founders
+                  who have aligned goals and common ideals.
+                </p>
+                <br />
+                <br />
+                <p>
+                  {" "}
+                  Through the association we are able to create an industry
+                  network of thought leaders to push forward and realize our
+                  goals of bringing real world assets on-chain.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  <b>To achieve our mission, our DAO will:</b>
+                </p>
+                <br />
+                <ul>
+                  <li>
+                    Unite and represent a diverse mix of global crypto projects
+                    focussed on real-world assets
+                  </li>
+                  <li>
+                    Help set a better standard and brand for crypto – trust,
+                    transparency, auditing
+                  </li>
+                  <li>
+                    Legal expertise – concentrate expertise and resources, fight
+                    legal battles, help the cause
+                  </li>
+                  <li>
+                    Become a vehicle for investment of traditional finance into
+                    the blockchain space
+                  </li>
+                  <li>
+                    Highlight best practice in decentralized organization
+                    stewardship
+                  </li>
+                  <li>
+                    Take a leading role to support the collaboration of open
+                    technical standards
+                  </li>
+                  <li>
+                    Inspire, representative and support real-world causes that
+                    revolutionize industries
+                  </li>
+                </ul>
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> What are real world assets<b>?</b>
+                </h3>
+                <br />
+                <p>
+                  Tokenization of real world assets involves the digital
+                  representation of real world (usually physical) assets on a
+                  blockchain.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  <b>Popular examples include:</b>
+                </p>
+                <br />
 
-              <ul>
-                <li>
-                  Commodities – gold, silver, diamonds, wheat, rice, copper
-                </li>
-                <li>
-                  Real estate – legal ownership of land, homes, and offices
-                </li>
-                <li>
-                  Stock or equity – crypto versions of traditional stocks or
-                  part of a private business
-                </li>
-              </ul>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                Cryptocurrencies such as Bitcoin or Ethereum would not be
-                considered real world assets. However, stablecoins based on real
-                world fiat currencies or gold are growing rapidly.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                <b>This process usually involves:</b>
-              </p>
-              <br />
-              <ul>
-                <li>Linking an NFT (digital token) to a physical asset</li>
-                <li>Allowing the trading of assets with NFTs</li>
-              </ul>
-            </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> Why tokenize real world assets<b>?</b>
-              </h3>
-              <br />
-              <br />
-              <p>
-                There are several advantages to bringing real-world assets onto
-                the blockchain.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                {" "}
-                <b>They include:</b>{" "}
-              </p>
-              <br />
-              <ul>
-                <li>
-                  Increased accessibility - increasing the total addressable
-                  market and revenue opportunities for issuers of real-world
-                  assets
-                </li>
-                <li>Boost transparency of asset usage and market risk</li>
-                <li>
-                  Equality – broaden financial access to the underbanked
-                  population underserved by traditional finance
-                </li>
-              </ul>
-            </div>
+                <ul>
+                  <li>
+                    Commodities – gold, silver, diamonds, wheat, rice, copper
+                  </li>
+                  <li>
+                    Real estate – legal ownership of land, homes, and offices
+                  </li>
+                  <li>
+                    Stock or equity – crypto versions of traditional stocks or
+                    part of a private business
+                  </li>
+                </ul>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  Cryptocurrencies such as Bitcoin or Ethereum would not be
+                  considered real world assets. However, stablecoins based on
+                  real world fiat currencies or gold are growing rapidly.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  <b>This process usually involves:</b>
+                </p>
+                <br />
+                <ul>
+                  <li>Linking an NFT (digital token) to a physical asset</li>
+                  <li>Allowing the trading of assets with NFTs</li>
+                </ul>
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Why tokenize real world assets<b>?</b>
+                </h3>
+                <br />
+                <br />
+                <p>
+                  There are several advantages to bringing real-world assets
+                  onto the blockchain.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>
+                  {" "}
+                  <b>They include:</b>{" "}
+                </p>
+                <br />
+                <ul>
+                  <li>
+                    Increased accessibility - increasing the total addressable
+                    market and revenue opportunities for issuers of real-world
+                    assets
+                  </li>
+                  <li>Boost transparency of asset usage and market risk</li>
+                  <li>
+                    Equality – broaden financial access to the underbanked
+                    population underserved by traditional finance
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
         </section>
+
         <div className="box">
           <div className="divider"></div>
         </div>

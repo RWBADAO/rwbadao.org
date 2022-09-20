@@ -84,8 +84,7 @@ const OurWork = () => {
               </div>
               <div className="text-content-box">
                 <h3>
-                  <span></span> Best Practice & Standards
-                  <b>.</b>
+                  <span></span> Best Practice & Standards<b>.</b>
                 </h3>
                 <br />
                 <ul>
