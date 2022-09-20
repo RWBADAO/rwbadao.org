@@ -90,6 +90,16 @@ body {
   margin: 5rem 0 0 0;
   max-width: 1250px;
 }
+.gi-text-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem;
+}
+.gi-text-grid div:last-child {
+  grid-column: 1 / 3;
+}
 .text-content-box h3 {
   font-size: 3.25rem;
   color: var(--white);
@@ -115,7 +125,6 @@ body {
   color: var(--white);
   font-size: 2rem;
   font-weight: 300;
-  list-style-type: none;
   line-height: 3rem;
 }
 .text-content-box {
@@ -128,6 +137,9 @@ body {
 }
 .text-content-box li:not(:last-child) {
   margin: 0 0 1rem 0;
+}
+.text-content-box.tcb-2 {
+  padding: 0;
 }
 .divider {
   width: 100%;
@@ -156,6 +168,15 @@ body {
 .dao-meaning-box h5:not(:last-child) {
   margin: 0 0 1.5rem 0;
 }
-.dotted-ul li {
-  list-style-type: circle;
+.bronze {
+  color: #c77b30 !important;
+}
+.silver {
+  color: #bababa !important;
+}
+.gold {
+  color: #f7d000 !important;
+}
+p {
+  font-weight: 300 !important;
 }

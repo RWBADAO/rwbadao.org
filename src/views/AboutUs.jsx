@@ -59,32 +59,32 @@ const AboutUs = () => {
               <br />
               <ul>
                 <li>
-                  <span>1. </span> Unite and represent a diverse mix of global
-                  crypto projects focussed on real-world assets
+                  Unite and represent a diverse mix of global crypto projects
+                  focussed on real-world assets
                 </li>
                 <li>
-                  <span>2. </span> Help set a better standard and brand for
-                  crypto – trust, transparency, auditing
+                  Help set a better standard and brand for crypto – trust,
+                  transparency, auditing
                 </li>
                 <li>
-                  <span>3. </span> Legal expertise – concentrate expertise and
-                  resources, fight legal battles, help the cause
+                  Legal expertise – concentrate expertise and resources, fight
+                  legal battles, help the cause
                 </li>
                 <li>
-                  <span>4. </span> Become a vehicle for investment of
-                  traditional finance into the blockchain space
+                  Become a vehicle for investment of traditional finance into
+                  the blockchain space
                 </li>
                 <li>
-                  <span>5. </span> Highlight best practice in decentralized
-                  organization stewardship
+                  Highlight best practice in decentralized organization
+                  stewardship
                 </li>
                 <li>
-                  <span>6. </span> Take a leading role to support the
-                  collaboration of open technical standards
+                  Take a leading role to support the collaboration of open
+                  technical standards
                 </li>
                 <li>
-                  <span>7. </span> Inspire, representative and support
-                  real-world causes that revolutionize industries
+                  Inspire, representative and support real-world causes that
+                  revolutionize industries
                 </li>
               </ul>
             </div>
@@ -107,7 +107,7 @@ const AboutUs = () => {
               </p>
               <br />
 
-              <ul className="dotted-ul">
+              <ul>
                 <li>
                   Commodities – gold, silver, diamonds, wheat, rice, copper
                 </li>
@@ -137,13 +137,8 @@ const AboutUs = () => {
               </p>
               <br />
               <ul>
-                <li>
-                  <span>1. </span> Linking an NFT (digital token) to a physical
-                  asset
-                </li>
-                <li>
-                  <span>2. </span> Allowing the trading of assets with NFTs
-                </li>
+                <li>Linking an NFT (digital token) to a physical asset</li>
+                <li>Allowing the trading of assets with NFTs</li>
               </ul>
             </div>
             <div className="text-content-box">
@@ -167,17 +162,14 @@ const AboutUs = () => {
               <br />
               <ul>
                 <li>
-                  <span>1. </span>Increased accessibility - increasing the total
-                  addressable market and revenue opportunities for issuers of
-                  real-world assets
+                  Increased accessibility - increasing the total addressable
+                  market and revenue opportunities for issuers of real-world
+                  assets
                 </li>
+                <li>Boost transparency of asset usage and market risk</li>
                 <li>
-                  <span>2. </span> Boost transparency of asset usage and market
-                  risk
-                </li>
-                <li>
-                  <span>3. </span> Equality – broaden financial access to the
-                  underbanked population underserved by traditional finance
+                  Equality – broaden financial access to the underbanked
+                  population underserved by traditional finance
                 </li>
               </ul>
             </div>

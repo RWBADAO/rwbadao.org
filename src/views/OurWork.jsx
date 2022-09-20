@@ -4,6 +4,11 @@ import "../styles/views/AboutUs.css";
 import LogoImg from "../assets/img/logo.png";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import TrustImg from "../assets/img/trust.png";
+import TeamworkImg from "../assets/img/teamwork.png";
+import LegalDocImg from "../assets/img/legal-document.png";
+import BadgeImg from "../assets/img/badge.png";
 
 const OurWork = () => {
   return (
@@ -18,81 +23,85 @@ const OurWork = () => {
             </div>
           </div>
         </section>
-        <section className="text-content">
-          <div className="box">
-            <div className="text-content-box">
-              <h3>
-                <span></span> Trust<b>.</b>
-              </h3>
-              <br />
-              <ul>
-                <li>
-                  <span>1. </span> Certification - transparency, security and
-                  ESG
-                </li>
-                <li>
-                  <span>2. </span> Marketing
-                </li>
-                <li>
-                  <span>3. </span> Research
-                </li>
-                <li>
-                  <span>4. </span> Education
-                </li>
-                <li>
-                  <span>5. </span> Directory listing
-                </li>
-                <li>
-                  <span>6. </span> Funding and Grants
-                </li>
-              </ul>
-            </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> Collaboration<b>.</b>
-              </h3>
-              <br />
-              <ul>
-                <li>
-                  <span>1. </span> Standards
-                </li>
-                <li>
-                  <span>2. </span> Events
-                </li>
-                <li>
-                  <span>3. </span> Training
-                </li>
-                <li>
-                  <span>4. </span> Jobs listings
-                </li>
-              </ul>
-            </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> Legal<b>.</b>
-              </h3>
-              <br />
-              <ul>
-                <li>
-                  <span>1. </span> Regulation tracking
-                </li>
-                <li>
-                  <span>2. </span> Lobbying
-                </li>
-                <li>
-                  <span>3. </span> Contract template and sample clauses
-                </li>
-                <li>
-                  <span>4. </span> Supporting members facing legal challenges
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
         <div className="box">
-          <div className="divider"></div>
+          <section className="tcb-grid-box">
+            <div className="tcb-grid">
+              <div className="tcb-img">
+                <img src={TrustImg} alt="LegalDocImg" />
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Trust<b>.</b>
+                </h3>
+                <br />
+                <ul>
+                  <li>Certification - transparency, security and ESG</li>
+                  <li>Marketing</li>
+                  <li>Research</li>
+                  <li>Education</li>
+                  <li>Directory listing</li>
+                  <li>Funding and Grants</li>
+                </ul>
+              </div>
+            </div>
+            <div className="tcb-grid">
+              <div className="tcb-img">
+                <img src={TeamworkImg} alt="LegalDocImg" />
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Collaboration<b>.</b>
+                </h3>
+                <br />
+                <ul>
+                  <li>Standards</li>
+                  <li>Events</li>
+                  <li>Training</li>
+                  <li>Jobs listings</li>
+                </ul>
+              </div>
+            </div>
+            <div className="tcb-grid">
+              <div className="tcb-img">
+                <img src={LegalDocImg} alt="LegalDocImg" />
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Legal<b>.</b>
+                </h3>
+                <br />
+                <ul>
+                  <li>Regulation tracking</li>
+                  <li>Lobbying</li>
+                  <li>Contract template and sample clauses</li>
+                  <li>Supporting members facing legal challenges</li>
+                </ul>
+              </div>
+            </div>
+            <div className="tcb-grid">
+              <div className="tcb-img">
+                <img src={BadgeImg} alt="BadgeImg" />
+              </div>
+              <div className="text-content-box">
+                <h3>
+                  <span></span> Best Practice & Standards
+                  <b>.</b>
+                </h3>
+                <br />
+                <ul>
+                  <li>Research</li>
+                  <li>Funding and Grants</li>
+                  <li>Technical standards</li>
+                  <li>Security best practice</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
-        <section className="roadmap">
+        {/* <div className="box">
+          <div className="divider"></div>
+        </div> */}
+        {/* <section className="roadmap">
           <div className="box">
             <div className="roadmap-main-box">
               <div className="section-heading-box">
@@ -168,7 +177,8 @@ const OurWork = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <Footer />
       </main>
     </div>
   );

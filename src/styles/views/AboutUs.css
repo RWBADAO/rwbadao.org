@@ -8,13 +8,39 @@
   width: 100%;
   padding: 22.5rem 0 0 0;
 }
-
+.tcb-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+.tcb-img {
+  width: 100%;
+}
+.tcb-img img {
+  width: 100%;
+  max-height: 6.5rem;
+  object-fit: contain;
+}
+.tcb-grid-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15rem;
+  padding: 0 0 5rem 0;
+}
 /* ROADMAP SECTION  */
 .roadmap-content {
   width: 90%;
   position: relative;
   margin: 0 auto;
   padding: 4rem 0;
+}
+.roadmap {
+  width: 100%;
+  padding: 0 0 7.5rem 0;
 }
 .road-map-line {
   width: 0.25rem;
@@ -87,14 +113,13 @@
 .become-member-content {
   padding: 0 0 10rem 0;
 }
-.become-member-content p {
+.p-p {
   color: var(--white);
   font-size: 2rem;
-  font-weight: 300;
-  line-height: 3rem;
-  width: 60%;
-  margin: 0 auto;
   text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .become-member-content .section-heading {
   margin: 0 auto 3rem auto;
@@ -108,25 +133,42 @@
   padding: 4rem 0;
 }
 .packages-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--off-white);
   border-radius: 1rem;
-  padding: 4rem 0;
+  padding: 3.5rem;
+}
+.packages-content:nth-child(1) {
+  border: 1px solid #c77b30;
+}
+.packages-content:nth-child(2) {
+  border: 1px solid #bababa;
+}
+.packages-content:nth-child(3) {
+  border: 1px solid #f7d000;
 }
 .packages-content h5 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   color: var(--off-white);
   font-weight: 700;
-  margin: 0 0 2rem 0;
+  margin: 1.5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.packages-content h5 img {
+  width: 3.5rem;
+  margin: 0 1rem 0 0;
 }
 .packages-content p {
   font-size: 2rem;
   color: var(--off-white);
   font-weight: 400;
-  margin: 1rem 0 0 0;
+  margin: 2.5rem 0 0 0;
+}
+.packages-content p svg {
+  color: #0e9956;
+  margin: 0 1rem 0 0;
 }
 .blue-btn {
   display: flex;
@@ -145,6 +187,86 @@
 .become-member-content button {
   margin: 6rem auto 0 auto;
   width: max-content;
+}
+
+/* CONTACT US  */
+.form-grid {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem 4rem;
+}
+.form-grid textarea {
+  grid-column: 1/-1;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 10rem;
+  resize: vertical;
+}
+.form-grid input,
+.form-grid textarea {
+  border: 1px solid var(--off-white);
+  border-radius: 0.75rem;
+  font-size: 1.35rem;
+  color: var(--off-white);
+  font-weight: 400;
+  padding: 1.5rem;
+  width: 100%;
+  background-color: transparent;
+}
+.form-grid textarea {
+  margin: 0 0 7.5rem 0;
+}
+.form-grid input:focus,
+.form-grid textarea:focus {
+  outline: none;
+}
+.form-grid input::placeholder,
+.form-grid textarea::placeholder {
+  font-size: 1.35rem;
+  color: var(--off-white);
+  font-weight: 500;
+}
+.contact-section .p-p {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto 4rem auto;
+}
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  max-width: 550px;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0 0 3rem 0;
+}
+.social-grid span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-white);
+  border-radius: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  max-height: 4.5rem;
+  max-width: 4.5rem;
+  cursor: pointer;
+}
+.social-grid span svg {
+  color: var(--main-dark);
+  font-size: 2.5rem;
+}
+.text-content-box > img {
+  width: max-content;
+  height: 16rem;
+  margin: 3.5rem 0 0 0;
+  object-fit: contain;
 }
 
 /* RESPONSIVENESS  */
@@ -190,4 +312,15 @@
   .roadmap-box-right {
     margin: 2.5rem 0;
   }
+}
+.mb-heading {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mb-heading img {
+  width: 5rem;
+  object-fit: contain;
+  margin: 0 1rem 0 0;
 }
