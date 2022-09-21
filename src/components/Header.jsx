@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/components/header.css";
 import LogoImg from "../assets/img/logo.png";
-import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import {
+  MdOutlineLightMode,
+  MdOutlineDarkMode,
+  MdMenu,
+  MdClose,
+} from "react-icons/md";
 
-const Header = () => {
+const Header = (props) => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   return (
     <header>
       <div className="box">
@@ -16,16 +23,56 @@ const Header = () => {
             <a href="#">Our Work</a>
             <a href="#">Get Involved</a>
             <div className="light-dark-switch-box">
-              <span>
+              <span onClick={props.changeToLightTheme}>
                 <MdOutlineLightMode />
               </span>
-              <span className="active-theme">
+              <span onClick={props.changeToDarkTheme} className="active-theme">
                 <MdOutlineDarkMode />
               </span>
+            </div>
+            <div
+              className="header-icon-btn"
+              onClick={() => {
+                setIsHeaderMobOpen(true);
+              }}
+            >
+              <MdMenu />
             </div>
           </div>
         </div>
       </div>
+      {isHeaderMobOpen ? (
+        <div className="header-mob">
+          <div className="box">
+            <div className="header-mob-content">
+              <div className="header-mob-top">
+                <img src={LogoImg} alt="" />
+                <div
+                  className="header-icon-btn"
+                  onClick={() => {
+                    setIsHeaderMobOpen(false);
+                  }}
+                >
+                  <MdClose />
+                </div>
+              </div>
+              <div className="header-mob-center">
+                <a href="#">About Us</a>
+                <a href="#">Our Work</a>
+                <a href="#">Get Involved</a>
+                <div className="light-dark-switch-box">
+                  <span>
+                    <MdOutlineLightMode />
+                  </span>
+                  <span className="active-theme">
+                    <MdOutlineDarkMode />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </header>
   );
 };

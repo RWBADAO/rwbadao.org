@@ -7,12 +7,28 @@
 }
 :root {
   font-size: 10px;
-  --main-dark: #101216;
-  --main-dark2: #191c22;
+}
+.light-theme {
+  --bg-main: #f7f8f9;
+  --bg-main2: #fff;
   --blue-light: #00baf7;
   --blue-dark: #01a5fb;
-  --off-white: #f7f8f9;
-  --white: #fff;
+  --text-color2: #131313;
+  --wb60: rgba(0, 0, 0, 0.65);
+  --text-color: #000;
+  --bw: #000;
+  --bw25: rgba(0, 0, 0, 0.15);
+}
+.dark-theme {
+  --bg-main: #101216;
+  --bg-main2: #191c22;
+  --blue-light: #00baf7;
+  --blue-dark: #01a5fb;
+  --text-color2: #f7f8f9;
+  --wb60: rgba(255, 255, 255, 0.65);
+  --text-color: #fff;
+  --bw25: rgba(225, 225, 225, 0.1);
+  --bw: #fff;
 }
 .box {
   max-width: 1500px;
@@ -25,6 +41,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .app {
   width: 100%;
@@ -44,7 +61,7 @@ body {
 .section-heading div {
   width: 5rem;
   height: 1px;
-  background-color: var(--white);
+  background-color: var(--text-color);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -52,7 +69,7 @@ body {
 }
 .section-heading h3 {
   font-size: 4rem;
-  color: var(--white);
+  color: var(--text-color);
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -70,7 +87,7 @@ body {
 .page-heading div {
   width: 35%;
   height: 1px;
-  background-color: var(--white);
+  background-color: var(--text-color);
   position: absolute;
   bottom: 0;
   left: 0%;
@@ -78,7 +95,7 @@ body {
 }
 .page-heading h2 {
   font-size: 5.5rem;
-  color: var(--white);
+  color: var(--text-color);
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -102,7 +119,7 @@ body {
 }
 .text-content-box h3 {
   font-size: 3.25rem;
-  color: var(--white);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -113,7 +130,7 @@ body {
 .text-content-box h3 span {
   width: 2.5rem;
   height: 1px;
-  background-color: var(--white);
+  background-color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +139,7 @@ body {
 .text-content-box p,
 .dao-p-box p,
 .text-content-box li {
-  color: var(--white);
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
@@ -145,7 +162,7 @@ body {
   width: 100%;
   height: 1px;
   margin: 10rem 0;
-  background-color: var(--white);
+  background-color: var(--text-color);
 }
 .dao-p-box {
   width: 100%;
@@ -158,7 +175,7 @@ body {
 .dao-meaning-box h5 {
   font-size: 2rem;
   font-weight: 300;
-  color: var(--white);
+  color: var(--text-color);
 }
 .dao-meaning-box h5 span {
   font-size: 5rem;
@@ -181,8 +198,30 @@ p {
   font-weight: 300 !important;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .box {
     padding: 0 2.5rem;
+  }
+  .section-heading {
+    margin: 0 auto 5rem auto;
+  }
+  .section-heading h3 {
+    font-size: 2.75rem;
+  }
+  .section-heading div {
+    width: 3.5rem;
+    transform: translate(-1rem, 0);
+  }
+  .section-heading-box {
+    justify-content: flex-start;
+  }
+  .page-heading h2 {
+    font-size: 3.5rem;
+  }
+  .divider {
+    margin: 5rem 0;
+  }
+  .text-content-box h3 {
+    font-size: 2.75rem;
   }
 }

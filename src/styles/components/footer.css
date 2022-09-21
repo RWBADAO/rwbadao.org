@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   padding: 7.5rem 0;
-  background-color: var(--main-dark2);
+  background-color: var(--bg-main2);
 }
 .footer-grid {
   width: 100%;
@@ -24,7 +24,7 @@ footer {
 .footer-grid-card-3 h6,
 .footer-grid-card-4 h6 {
   font-size: 1.85rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-weight: 600;
   margin: 0 0 1.5rem 0;
 }
@@ -66,7 +66,7 @@ footer {
 .footer-subscribe-box {
   width: 100%;
   margin: 0 0 2.5rem 0;
-  background-color: var(--off-white);
+  background-color: var(--bg-main);
   border-radius: 0.75rem;
   display: flex;
   transition: 0.5s;
@@ -81,11 +81,11 @@ footer {
   outline: 0;
   padding: 1rem 2.5rem 1rem 0;
   font-size: 1.65rem;
-  color: var(--main-dark);
+  color: var(--text-color);
   padding: 0 0 0 1.5rem;
 }
 .footer-subscribe-box input::placeholder {
-  color: var(--main-dark);
+  color: var(--text-color);
   opacity: 0.75;
 }
 .footer-con {
@@ -109,13 +109,13 @@ footer {
 }
 .footer-links-box a {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--text-color);
   margin: 0 0 0 2.5rem;
   text-decoration: underline;
 }
 .footer-p {
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--text-color);
 }
 .footer-subscribe-box button {
   background-color: unset;
@@ -123,7 +123,7 @@ footer {
   outline: 0;
   cursor: pointer;
   font-size: 1.65rem;
-  color: var(--white);
+  color: #fff;
   background-color: var(--blue-dark);
   font-weight: 600;
   text-transform: uppercase;
@@ -140,22 +140,25 @@ footer {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: var(--bg-main);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 2.5rem 0 0;
   font-size: 2.15rem;
   color: var(--blue-dark);
+  transition: 1s;
 }
 .footer-icons-box a svg {
-  color: #000;
+  color: var(--text-color);
   width: 1.85rem;
+}
+.footer-icons-box a:hover {
+  transform: translate(0, -0.5rem);
 }
 @media screen and (max-width: 1250px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5rem 0;
   }
   .footer-grid-card-2 {
     order: 3;
@@ -168,9 +171,14 @@ footer {
   }
 }
 @media screen and (max-width: 750px) {
+  .footer-con {
+    margin: 5rem 0 0 0;
+  }
+  footer {
+    padding: 5rem 0;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
-    grid-gap: 5rem;
   }
   .footer-grid-card-2 {
     order: 2;
@@ -181,6 +189,21 @@ footer {
   .footer-grid-card-4 {
     order: 4;
   }
+  .footer-con {
+    flex-direction: column-reverse;
+  }
+  .footer-p {
+    width: 100%;
+    text-align: center;
+    margin: 3.5rem 0 0 0;
+  }
+  .footer-links-box {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .footer-links-box a {
+    margin: 0 2.5rem 0 0;
+  }
 }
 .back-to-top {
   width: 5rem;
@@ -190,7 +213,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  color: var(--white);
+  color: #fff;
   border-radius: 50%;
   position: absolute;
   bottom: 3.5rem;

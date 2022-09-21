@@ -1,6 +1,6 @@
 .about-page {
   width: 100%;
-  background-color: var(--main-dark);
+  background-color: var(--bg-main);
   position: relative;
   min-height: 100vh;
 }
@@ -45,7 +45,7 @@
 .road-map-line {
   width: 0.25rem;
   height: 100%;
-  background: var(--off-white);
+  background: var(--text-color2);
   position: absolute;
   top: 0;
   left: 50%;
@@ -73,10 +73,10 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 1px solid var(--off-white);
+  border: 1px solid var(--text-color2);
   padding: 2.5rem;
   border-radius: 1rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-size: 1.75rem;
 }
 .roadmap-text-box p {
@@ -94,10 +94,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--off-white);
-  background: var(--off-white);
+  border: 1px solid var(--text-color2);
+  background: var(--text-color2);
   font-size: 2.5rem;
-  color: var(--main-dark);
+  color: var(--bg-main);
   font-weight: 600;
   position: relative;
   z-index: 100;
@@ -114,7 +114,7 @@
   padding: 0 0 10rem 0;
 }
 .p-p {
-  color: var(--white);
+  color: var(--text-color);
   font-size: 2rem;
   text-align: center;
   width: 100%;
@@ -133,7 +133,7 @@
   padding: 4rem 0;
 }
 .packages-content {
-  border: 1px solid var(--off-white);
+  border: 1px solid var(--text-color2);
   border-radius: 1rem;
   padding: 3.5rem;
 }
@@ -148,7 +148,7 @@
 }
 .packages-content h5 {
   font-size: 2.5rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-weight: 700;
   margin: 1.5rem 0 5rem 0;
   display: flex;
@@ -162,7 +162,7 @@
 }
 .packages-content p {
   font-size: 2rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-weight: 400;
   margin: 2.5rem 0 0 0;
 }
@@ -176,7 +176,7 @@
   align-items: center;
   padding: 1.5rem 3rem;
   border-radius: 0.75rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
@@ -209,10 +209,10 @@
 }
 .form-grid input,
 .form-grid textarea {
-  border: 1px solid var(--off-white);
-  border-radius: 0.75rem;
-  font-size: 1.35rem;
-  color: var(--off-white);
+  border: 1px solid var(--text-color2);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color2);
   font-weight: 400;
   padding: 1.5rem;
   width: 100%;
@@ -223,12 +223,13 @@
 }
 .form-grid input:focus,
 .form-grid textarea:focus {
+  font-size: 1.75rem;
   outline: none;
 }
 .form-grid input::placeholder,
 .form-grid textarea::placeholder {
-  font-size: 1.35rem;
-  color: var(--off-white);
+  font-size: 1.5rem;
+  color: var(--text-color2);
   font-weight: 500;
 }
 .contact-section .p-p {
@@ -250,17 +251,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--off-white);
+  background-color: var(--text-color2);
   border-radius: 50%;
   width: 4.5rem;
   height: 4.5rem;
   max-height: 4.5rem;
   max-width: 4.5rem;
   cursor: pointer;
+  transition: 1s;
 }
 .social-grid span svg {
-  color: var(--main-dark);
+  color: var(--bg-main);
   font-size: 2.5rem;
+}
+.social-grid span {
+  transform: translate(0, -0.5rem);
 }
 .text-content-box > img {
   width: max-content;
@@ -273,14 +278,16 @@
   width: max-content;
   align-items: center;
   justify-content: flex-start;
+  font-size: 2.25rem;
+  color: var(--text-color);
 }
 .mb-heading img {
   width: 5rem;
   object-fit: contain;
-  margin: 0 1rem 0 0;
+  margin: 0 1.5rem 0 0;
 }
 .become-member-content .p-p {
-  color: var(--white);
+  color: var(--text-color);
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
@@ -325,8 +332,14 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  .roadmap-content {
+@media screen and (max-width: 750px) {
+  .tcb-img img {
+    width: max-content;
+  }
+  .page-heading-section {
+    padding: 12.5rem 0 0 0;
+  }
+  .page-heading-section .roadmap-content {
     width: 100%;
   }
   .roadmap-circle {
@@ -356,5 +369,6 @@
   }
   .form-grid {
     grid-template-columns: 1fr;
+    grid-gap: 3.5rem;
   }
 }

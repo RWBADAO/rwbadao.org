@@ -11,9 +11,9 @@ import { FaTwitter, FaDiscord, FaGlobe } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
-      <div className="back-to-top">
+      <a href="#" className="back-to-top">
         <MdNorth />
-      </div>
+      </a>
       <div className="box">
         <div className="footer-grid">
           <div className="footer-grid-card-1">

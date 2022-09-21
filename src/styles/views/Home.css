@@ -1,11 +1,11 @@
 .home-page {
   width: 100%;
-  background-color: var(--main-dark);
+  background-color: var(--bg-main);
   position: relative;
 }
 .hero-section {
   width: 100%;
-  /* background-color: var(--off-white); */
+  /* background-color: var(--text-color2); */
 }
 .hero-section-content {
   width: 100%;
@@ -23,20 +23,31 @@
   align-items: flex-start;
   justify-content: center;
 }
+.hero-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.hero-right img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
 .hero-left h1 {
   font-size: 5rem;
-  color: var(--white);
+  color: var(--text-color);
   text-transform: uppercase;
 }
 .hero-left h1 span {
   background: linear-gradient(to right, var(--blue-light), var(--blue-dark));
 
-  color: var(--white);
+  color: var(--text-color);
   padding: 0 2rem;
 }
 .hero-left h2 {
   font-size: 3rem;
-  color: var(--white);
+  color: var(--text-color);
   font-weight: 300;
   margin: 5rem 0 0 0;
 }
@@ -67,22 +78,29 @@
   justify-content: center;
   text-align: center;
 }
-.wwd-grid-card h4 span {
+
+.wwd-grid-card img {
+  width: 20rem;
+  object-fit: cover;
+  margin: 2.5rem 0;
+  height: 20rem;
+}
+.wwd-grid-card h4 {
   font-size: 2.25rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-weight: 600;
   color: var(--blue-dark);
   text-transform: capitalize;
 }
-.wwd-grid-card h4 {
+.wwd-grid-card p {
   font-size: 1.6rem;
-  color: var(--off-white);
+  color: var(--text-color2);
   font-weight: 400;
   width: 60%;
 }
 .wwd-line {
   height: 15rem;
-  background-color: var(--off-white);
+  background-color: var(--text-color2);
   margin: 1.5rem 0;
   width: 1px;
 }
@@ -92,8 +110,8 @@
   align-items: center;
   padding: 1.5rem 3rem;
   border-radius: 0.75rem;
-  color: var(--off-white);
-  font-size: 1.6rem;
+  color: #fff;
+  font-size: 1.85rem;
   font-weight: 500;
   cursor: pointer;
   border: 0;
@@ -102,7 +120,7 @@
 }
 .founding-members {
   width: 100%;
-  background-color: var(--main-dark2);
+  background-color: var(--bg-main2);
   padding: 7.5rem 0;
 }
 .fm-grid-box-con {
@@ -125,6 +143,9 @@
   justify-content: center;
   height: 100%;
 }
+.fm-img-box img {
+  object-fit: contain;
+}
 .fm-grid-box {
   width: 100%;
   max-width: 1000px;
@@ -140,7 +161,7 @@
   /* transform: translate(0, 2.5rem); */
 }
 .fm-grid-swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bw25);
   opacity: 1;
   width: 8px;
   height: 8px;
@@ -150,7 +171,7 @@
 .fm-grid-swiper
   .swiper-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: var(--wb60);
   width: 25px;
   height: 8px;
   border-radius: 1000px;
@@ -167,10 +188,10 @@
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.35s;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--wb60);
 }
 .fm-arrow-box:hover {
-  color: rgba(255, 255, 255, 1);
+  color: var(--bw);
 }
 .fm-grid {
   width: 100%;
@@ -199,10 +220,10 @@
 }
 .jrw-section p {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--text-color);
   font-weight: 300;
   text-align: center;
-  max-width: 700px;
+  max-width: 750px;
   width: 100%;
 }
 .icons-box {
@@ -216,13 +237,17 @@
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  background: linear-gradient(to right, var(--blue-light), var(--blue-dark));
+  background: var(--bg-main2);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 2.5rem;
   font-size: 2.15rem;
-  color: var(--white);
+  color: var(--text-color);
+  transition: 1s;
+}
+.icons-box a:hover {
+  transform: translate(0, -0.5rem);
 }
 
 /* RESPONSIVENESS  */
@@ -239,22 +264,40 @@
   .hero-section-content {
     grid-template-columns: 1fr;
   }
-  .hero-right {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
+  .wwd-line {
+    height: 10rem;
+  }
   .hero-left h2 {
     font-size: 2rem;
   }
   .hero-left h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .hero-left {
-    padding: 0;
+    padding: 10rem 0 0 0;
   }
   .wwd-grid-card h4 {
     width: 100%;
+  }
+  .fm-arrow-box {
+    display: none;
+  }
+  .fm-grid-swiper {
+    padding: 0;
+  }
+  .fm-grid-swiper .swiper-slide {
+    width: max-content;
+  }
+  .hero-left h1 span {
+    padding: 0 1rem;
+  }
+  .hero-right img {
+    height: 100%;
+  }
+  .wwd-grid-card p {
+    width: 80%;
   }
 }

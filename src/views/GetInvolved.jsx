@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Globals.css";
 import "../styles/views/AboutUs.css";
 import LogoImg from "../assets/img/logo.png";
-import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import Header from "../components/Header";
 import BronzeImg from "../assets/img/bronze.png";
 import SilverImg from "../assets/img/silver.png";
@@ -11,15 +10,116 @@ import { MdCheck } from "react-icons/md";
 import EmblemImg from "../assets/img/emblem.png";
 import CommunitiesImg from "../assets/img/communities.png";
 import DaoImg from "../assets/img/dao.png";
+import { Link } from "react-router-dom";
 import MediaImg from "../assets/img/media.png";
 import { FaDiscord, FaTwitter, FaLinkedinIn, FaMediumM } from "react-icons/fa";
 import Footer from "../components/Footer";
+import IconSubStack from "../assets/icons/IconSubStack";
+import {
+  MdOutlineLightMode,
+  MdOutlineDarkMode,
+  MdMenu,
+  MdClose,
+} from "react-icons/md";
 
 const GetInvolved = () => {
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(true);
   return (
-    <div className="app">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       <main className="about-page">
-        <Header />
+        <header>
+          <div className="box">
+            <div className="header-content">
+              <div className="header-left">
+                <Link to="/">
+                  <img src={LogoImg} alt="" />
+                </Link>
+              </div>
+              <div className="header-right">
+                <Link to="/aboutus">About Us</Link>
+                <Link to="/ourwork">Our Work</Link>
+                <Link to="/getinvolved">Get Involved</Link>
+                <div className="light-dark-switch-box">
+                  <span
+                    onClick={() => {
+                      setIsLightTheme(true);
+                    }}
+                    className={`${
+                      isLightTheme ? "active-theme" : "inactive-theme"
+                    }`}
+                  >
+                    <MdOutlineLightMode />
+                  </span>
+                  <span
+                    onClick={() => {
+                      setIsLightTheme(false);
+                    }}
+                    className={`${
+                      isLightTheme ? "inactive-theme" : "active-theme"
+                    }`}
+                  >
+                    <MdOutlineDarkMode />
+                  </span>
+                </div>
+                <div
+                  className="header-icon-btn"
+                  onClick={() => {
+                    setIsHeaderMobOpen(true);
+                  }}
+                >
+                  <MdMenu />
+                </div>
+              </div>
+            </div>
+          </div>
+          {isHeaderMobOpen ? (
+            <div className="header-mob">
+              <div className="box">
+                <div className="header-mob-content">
+                  <div className="header-mob-top">
+                    <img src={LogoImg} alt="" />
+                    <div
+                      className="header-icon-btn"
+                      onClick={() => {
+                        setIsHeaderMobOpen(false);
+                      }}
+                    >
+                      <MdClose />
+                    </div>
+                  </div>
+                  <div className="header-mob-center">
+                    <Link to="/aboutus">About Us</Link>
+                    <Link to="/ourwork">Our Work</Link>
+                    <Link to="/getinvolved">Get Involved</Link>
+                    <div className="light-dark-switch-box">
+                      <span
+                        onClick={() => {
+                          setIsLightTheme(true);
+                        }}
+                        className={`${
+                          isLightTheme ? "active-theme" : "inactive-theme"
+                        }`}
+                      >
+                        <MdOutlineLightMode />
+                      </span>
+                      <span
+                        onClick={() => {
+                          setIsLightTheme(false);
+                        }}
+                        className={`${
+                          isLightTheme ? "inactive-theme" : "active-theme"
+                        }`}
+                      >
+                        <MdOutlineDarkMode />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
+        </header>
         <section className="page-heading-section">
           <div className="box">
             <div className="page-heading">
@@ -39,10 +139,10 @@ const GetInvolved = () => {
             <br />
             <div className="gi-text-grid">
               <div>
-                <p className="mb-heading">
+                <h6 className="mb-heading">
                   <img src={CommunitiesImg} alt="CommunitiesImg" />
                   <b>Community</b>
-                </p>
+                </h6>
                 <br />
                 <p>
                   RWBA hosts networking events both online and in real life
@@ -53,10 +153,10 @@ const GetInvolved = () => {
                 </p>
               </div>
               <div>
-                <p className="mb-heading">
+                <h6 className="mb-heading">
                   <img src={MediaImg} alt="MediaImg" />
                   <b>Platform</b>
-                </p>
+                </h6>
                 <br />
                 <p>
                   The RWBA platform includes a jobs board to advertise
@@ -67,10 +167,10 @@ const GetInvolved = () => {
                 </p>
               </div>
               <div>
-                <p className="mb-heading">
+                <h6 className="mb-heading">
                   <img src={DaoImg} alt="DaoImg" />
                   <b>DAO</b>
-                </p>
+                </h6>
                 <br />
                 <p>
                   RWBA evolved from a community of blockchain enthusiasts and
@@ -239,7 +339,9 @@ const GetInvolved = () => {
             </div>
           </div>
         </section>
-        <div className="divider"></div>
+        <div className="box">
+          <div className="divider"></div>
+        </div>
         <section className="contact-section">
           <div className="box">
             <div className="contact-content">
@@ -276,7 +378,7 @@ const GetInvolved = () => {
                 <FaMediumM />
               </span>
               <span>
-                <FaDiscord />
+                <IconSubStack />
               </span>
             </div>
           </div>
