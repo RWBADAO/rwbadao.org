@@ -326,6 +326,8 @@
 .chart-box canvas {
   object-fit: contain;
   width: 100%;
+  max-height: 40rem;
+  max-width: 1000px;
 }
 /* RESPONSIVENESS  */
 @media screen and (max-width: 1140px) {
