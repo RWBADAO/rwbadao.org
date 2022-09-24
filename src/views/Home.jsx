@@ -88,9 +88,8 @@ const Home = () => {
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   const [isLightTheme, setIsLightTheme] = useState(true);
   return (
-    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
-      <main className="home-page">
-        <header>
+    <main className="home-page">
+      {/* <header>
           <div className="box">
             <div className="header-content">
               <div className="header-left">
@@ -183,37 +182,37 @@ const Home = () => {
               </div>
             </div>
           ) : null}
-        </header>
-        <section className="hero-section">
-          <div className="box">
-            <div className="hero-section-content">
-              <div className="hero-left">
-                <h1>
-                  We Believe That The Future of Blockchain is <br />{" "}
-                  <span>Real World Assets</span>
-                </h1>
-                <h2>
-                  Our DAO unites groundbreaking projects that will shape a $200
-                  trillion shared opportunity.
-                </h2>
-              </div>
-              <div className="hero-right">
-                <img className="light-el" src={HeroImgWhite} alt="HeroImg" />
-                <img className="dark-el" src={HeroImgBlack} alt="HeroImg" />
-              </div>
+        </header> */}
+      <section className="hero-section">
+        <div className="box">
+          <div className="hero-section-content">
+            <div className="hero-left">
+              <h1>
+                We Believe That The Future of Blockchain is <br />{" "}
+                <span>Real World Assets</span>
+              </h1>
+              <h2>
+                Our DAO unites groundbreaking projects that will shape a $200
+                trillion shared opportunity.
+              </h2>
+            </div>
+            <div className="hero-right">
+              <img className="light-el" src={HeroImgWhite} alt="HeroImg" />
+              <img className="dark-el" src={HeroImgBlack} alt="HeroImg" />
             </div>
           </div>
-        </section>
-        <section className="what-we-do">
-          <div className="box">
-            <div className="wwd-content">
-              <div className="section-heading-box">
-                <div className="section-heading">
-                  <h3>what we do.</h3>
-                  <div></div>
-                </div>
+        </div>
+      </section>
+      <section className="what-we-do">
+        <div className="box">
+          <div className="wwd-content">
+            <div className="section-heading-box">
+              <div className="section-heading">
+                <h3>what we do.</h3>
+                <div></div>
               </div>
-              {/* <div className="wwd-grid">
+            </div>
+            {/* <div className="wwd-grid">
                 <div className="wwd-line"></div>
 
                 <div className="wwd-grid-card">
@@ -244,262 +243,256 @@ const Home = () => {
                   <div className="wwd-line"></div>
                 </div>
               </div> */}
-              <div className="wwd-box">
-                <div className="wwd-box-card">
-                  <img
-                    className="light-el"
-                    src={WWDImg1White}
-                    alt="WWDImg1White"
-                  />
-                  <img
-                    className="dark-el"
-                    src={WWDImg1Black}
-                    alt="WWDImg1White"
-                  />
-                  <h4>Build trust</h4>
-                  <p>
-                    Build trust in innovative projects through certification,
-                    community and financial support
-                  </p>
-                </div>
-                <div className="wwd-box-card">
-                  <img
-                    className="light-el"
-                    src={WWDImg2White}
-                    alt="WWDImg2White"
-                  />
-                  <img
-                    className="dark-el"
-                    src={WWDImg2Black}
-                    alt="WWDImg2White"
-                  />
-                  <h4>Concentrate legal expertise</h4>
-                  <p>
-                    Concentrate legal expertise and resources to solve legal
-                    ambiguity around asset tokenization
-                  </p>
-                </div>
-                <div className="wwd-box-card">
-                  <img
-                    className="light-el"
-                    src={WWDImg3White}
-                    alt="WWDImg3White"
-                  />
-                  <img
-                    className="dark-el"
-                    src={WWDImg3Black}
-                    alt="WWDImg3White"
-                  />
-                  <h4>Steer collaboration</h4>
-                  <p>
-                    Steer collaboration of open technical standards to unlock
-                    greater liquidity, accessibility and transparency
-                  </p>
-                </div>
+            <div className="wwd-box">
+              <div className="wwd-box-card">
+                <img
+                  className="light-el"
+                  src={WWDImg1White}
+                  alt="WWDImg1White"
+                />
+                <img
+                  className="dark-el"
+                  src={WWDImg1Black}
+                  alt="WWDImg1White"
+                />
+                <h4>Build trust</h4>
+                <p>
+                  Build trust in innovative projects through certification,
+                  community and financial support
+                </p>
               </div>
-              <button className="blue-btn">Become a Member</button>
+              <div className="wwd-box-card">
+                <img
+                  className="light-el"
+                  src={WWDImg2White}
+                  alt="WWDImg2White"
+                />
+                <img
+                  className="dark-el"
+                  src={WWDImg2Black}
+                  alt="WWDImg2White"
+                />
+                <h4>Concentrate legal expertise</h4>
+                <p>
+                  Concentrate legal expertise and resources to solve legal
+                  ambiguity around asset tokenization
+                </p>
+              </div>
+              <div className="wwd-box-card">
+                <img
+                  className="light-el"
+                  src={WWDImg3White}
+                  alt="WWDImg3White"
+                />
+                <img
+                  className="dark-el"
+                  src={WWDImg3Black}
+                  alt="WWDImg3White"
+                />
+                <h4>Steer collaboration</h4>
+                <p>
+                  Steer collaboration of open technical standards to unlock
+                  greater liquidity, accessibility and transparency
+                </p>
+              </div>
             </div>
+            <button className="blue-btn">Become a Member</button>
           </div>
-        </section>
-        <section className="home-text-con">
-          <div className="box">
-            <div className="text-content-box">
-              <h3>
-                <span></span> What are real world assets<b>?</b>
-              </h3>
-              <br />
-              <p>
-                Tokenization of real world assets involves the digital
-                representation of real world (usually physical) assets on a
-                blockchain.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                <b>Popular examples include:</b>
-              </p>
-              <br />
+        </div>
+      </section>
+      <section className="home-text-con">
+        <div className="box">
+          <div className="text-content-box">
+            <h3>
+              <span></span> What are real world assets<b>?</b>
+            </h3>
+            <br />
+            <p>
+              Tokenization of real world assets involves the digital
+              representation of real world (usually physical) assets on a
+              blockchain.
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+              <b>Popular examples include:</b>
+            </p>
+            <br />
 
-              <ul>
-                <li>
-                  Commodities – gold, silver, diamonds, wheat, rice, copper
-                </li>
-                <li>
-                  Real estate – legal ownership of land, homes, and offices
-                </li>
-                <li>
-                  Stock or equity – crypto versions of traditional stocks or
-                  part of a private business
-                </li>
-              </ul>
+            <ul>
+              <li>Commodities – gold, silver, diamonds, wheat, rice, copper</li>
+              <li>Real estate – legal ownership of land, homes, and offices</li>
+              <li>
+                Stock or equity – crypto versions of traditional stocks or part
+                of a private business
+              </li>
+            </ul>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+              Cryptocurrencies such as Bitcoin or Ethereum would not be
+              considered real world assets. However, stablecoins based on real
+              world fiat currencies or gold are growing rapidly.
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+              <b>This process usually involves:</b>
+            </p>
+            <br />
+            <ul>
+              <li>Linking an NFT (digital token) to a physical asset</li>
+              <li>Allowing the trading of assets with NFTs</li>
+            </ul>
+          </div>
+          <div className="text-content-box">
+            <h3>
+              <span></span> Why tokenize real world assets<b>?</b>
+            </h3>
+            <br />
+            <br />
+            <p>
+              There are several advantages to bringing real-world assets onto
+              the blockchain.
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p>
+              {" "}
+              <b>They include:</b>{" "}
+            </p>
+            <br />
+            <ul>
+              <li>
+                Increased accessibility - increasing the total addressable
+                market and revenue opportunities for issuers of real-world
+                assets
+              </li>
+              <li>Boost transparency of asset usage and market risk</li>
+              <li>
+                Equality – broaden financial access to the underbanked
+                population underserved by traditional finance
+              </li>
+            </ul>
+            <br />
+            <br />
+          </div>
+          <div className="text-content-box">
+            <h3>
+              <span></span> The Tokenization opportunity<b>.</b>
+            </h3>
+            <br />
+            <br />
+            <p>
+              The total size of tokenized illiquid assets, including real estate
+              and natural resources could reach $16.1 trillion by 2030.
               <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                Cryptocurrencies such as Bitcoin or Ethereum would not be
-                considered real world assets. However, stablecoins based on real
-                world fiat currencies or gold are growing rapidly.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                <b>This process usually involves:</b>
-              </p>
-              <br />
-              <ul>
-                <li>Linking an NFT (digital token) to a physical asset</li>
-                <li>Allowing the trading of assets with NFTs</li>
-              </ul>
+              In a best-case scenario, that estimate goes up to US$68 trillion.
+            </p>
+          </div>
+          <div className="home-chart-box">
+            <h4>
+              Tokenization of global iliquid assets estimated to be a $16
+              Trillion business opportunity by 2030
+            </h4>
+            <div className="chart-box">
+              <Bar options={options} data={data} />
             </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> Why tokenize real world assets<b>?</b>
-              </h3>
-              <br />
-              <br />
-              <p>
-                There are several advantages to bringing real-world assets onto
-                the blockchain.
-              </p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <p>
-                {" "}
-                <b>They include:</b>{" "}
-              </p>
-              <br />
-              <ul>
-                <li>
-                  Increased accessibility - increasing the total addressable
-                  market and revenue opportunities for issuers of real-world
-                  assets
-                </li>
-                <li>Boost transparency of asset usage and market risk</li>
-                <li>
-                  Equality – broaden financial access to the underbanked
-                  population underserved by traditional finance
-                </li>
-              </ul>
-              <br />
-              <br />
+          </div>
+        </div>
+      </section>
+      <section className="founding-members">
+        <div className="box">
+          <div className="section-heading-box">
+            <div className="section-heading">
+              <h3>founding members.</h3>
+              <div></div>
             </div>
-            <div className="text-content-box">
-              <h3>
-                <span></span> The Tokenization opportunity<b>.</b>
-              </h3>
-              <br />
-              <br />
-              <p>
-                The total size of tokenized illiquid assets, including real
-                estate and natural resources could reach $16.1 trillion by 2030.
-                <br />
-                In a best-case scenario, that estimate goes up to US$68
-                trillion.
-              </p>
-            </div>
-            <div className="home-chart-box">
-              <h4>
-                Tokenization of global iliquid assets estimated to be a $16
-                Trillion business opportunity by 2030
-              </h4>
-              <div className="chart-box">
-                <Bar options={options} data={data} />
+          </div>
+          <div className="fm-grid-box-con">
+            <div className="fm-grid-box">
+              <div className="fm-arrow-box fm-prev">
+                <MdWest />
+              </div>
+              <div className="fm-grid-swiper">
+                <Swiper
+                  slidesPerView={"auto"}
+                  spaceBetween={50}
+                  className="mySwiper"
+                  loop={true}
+                  navigation={{
+                    nextEl: ".fm-next",
+                    prevEl: ".fm-prev",
+                  }}
+                  pagination={true}
+                  modules={[Navigation, Pagination]}
+                  breakpoints={{
+                    700: {
+                      slidesPerView: 3,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="fm-img-box">
+                      <img src={LandxImg} alt="founding member img" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="fm-img-box">
+                      <img src={MakerImg} alt="founding member img" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="fm-img-box">
+                      <img src={TangibleImg} alt="founding member img" />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <div className="fm-arrow-box fm-next">
+                <MdEast />
               </div>
             </div>
           </div>
-        </section>
-        <section className="founding-members">
-          <div className="box">
+        </div>
+      </section>
+      <section className="join-real-world">
+        <div className="box">
+          <div className="jrw-section">
             <div className="section-heading-box">
               <div className="section-heading">
-                <h3>founding members.</h3>
+                <h3>Join the real world community.</h3>
                 <div></div>
               </div>
             </div>
-            <div className="fm-grid-box-con">
-              <div className="fm-grid-box">
-                <div className="fm-arrow-box fm-prev">
-                  <MdWest />
-                </div>
-                <div className="fm-grid-swiper">
-                  <Swiper
-                    slidesPerView={"auto"}
-                    spaceBetween={50}
-                    className="mySwiper"
-                    loop={true}
-                    navigation={{
-                      nextEl: ".fm-next",
-                      prevEl: ".fm-prev",
-                    }}
-                    pagination={true}
-                    modules={[Navigation, Pagination]}
-                    breakpoints={{
-                      700: {
-                        slidesPerView: 3,
-                      },
-                    }}
-                  >
-                    <SwiperSlide>
-                      <div className="fm-img-box">
-                        <img src={LandxImg} alt="founding member img" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="fm-img-box">
-                        <img src={MakerImg} alt="founding member img" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <div className="fm-img-box">
-                        <img src={TangibleImg} alt="founding member img" />
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-                <div className="fm-arrow-box fm-next">
-                  <MdEast />
-                </div>
-              </div>
+            <p>
+              Start learning more, connect with DAO members and make your
+              contribution towards further tokenization of real world assets.
+            </p>
+            <div className="icons-box">
+              <a href="#">
+                <FaTwitter />
+              </a>
+              <a href="#">
+                <FaDiscord />
+              </a>
+              <a href="#">
+                <FaGlobe />
+              </a>
             </div>
           </div>
-        </section>
-        <section className="join-real-world">
-          <div className="box">
-            <div className="jrw-section">
-              <div className="section-heading-box">
-                <div className="section-heading">
-                  <h3>Join the real world community.</h3>
-                  <div></div>
-                </div>
-              </div>
-              <p>
-                Start learning more, connect with DAO members and make your
-                contribution towards further tokenization of real world assets.
-              </p>
-              <div className="icons-box">
-                <a href="#">
-                  <FaTwitter />
-                </a>
-                <a href="#">
-                  <FaDiscord />
-                </a>
-                <a href="#">
-                  <FaGlobe />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <Footer />
-      </main>
-    </div>
+        </div>
+      </section>
+      <Footer />
+    </main>
   );
 };
 

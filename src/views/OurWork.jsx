@@ -21,9 +21,8 @@ const OurWork = () => {
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   const [isLightTheme, setIsLightTheme] = useState(true);
   return (
-    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
-      <main className="about-page">
-        <header>
+    <main className="about-page">
+      {/* <header>
           <div className="box">
             <div className="header-content">
               <div className="header-left">
@@ -116,93 +115,93 @@ const OurWork = () => {
               </div>
             </div>
           ) : null}
-        </header>
-        <section className="page-heading-section">
-          <div className="box">
-            <div className="page-heading">
-              <h2>our work.</h2>
-              <div></div>
+        </header> */}
+      <section className="page-heading-section">
+        <div className="box">
+          <div className="page-heading">
+            <h2>our work.</h2>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <div className="box">
+        <section className="tcb-grid-box">
+          <div className="tcb-grid">
+            <div className="tcb-img">
+              <img src={TrustImg} alt="LegalDocImg" />
+            </div>
+            <div className="text-content-box">
+              <h3>
+                <span></span> Trust<b>.</b>
+              </h3>
+              <br />
+              <ul>
+                <li>Certification - transparency, security and ESG</li>
+                <li>Marketing</li>
+                <li>Research</li>
+                <li>Education</li>
+                <li>Directory listing</li>
+                <li>Funding and Grants</li>
+              </ul>
+            </div>
+          </div>
+          <div className="tcb-grid">
+            <div className="tcb-img">
+              <img src={TeamworkImg} alt="LegalDocImg" />
+            </div>
+            <div className="text-content-box">
+              <h3>
+                <span></span> Collaboration<b>.</b>
+              </h3>
+              <br />
+              <ul>
+                <li>Standards</li>
+                <li>Events</li>
+                <li>Training</li>
+                <li>Jobs listings</li>
+              </ul>
+            </div>
+          </div>
+          <div className="tcb-grid">
+            <div className="tcb-img">
+              <img src={LegalDocImg} alt="LegalDocImg" />
+            </div>
+            <div className="text-content-box">
+              <h3>
+                <span></span> Legal<b>.</b>
+              </h3>
+              <br />
+              <ul>
+                <li>Regulation tracking</li>
+                <li>Lobbying</li>
+                <li>Contract template and sample clauses</li>
+                <li>Supporting members facing legal challenges</li>
+              </ul>
+            </div>
+          </div>
+          <div className="tcb-grid">
+            <div className="tcb-img">
+              <img src={BadgeImg} alt="BadgeImg" />
+            </div>
+            <div className="text-content-box">
+              <h3>
+                <span></span> Best Practice & Standards<b>.</b>
+              </h3>
+              <br />
+              <ul>
+                <li>Research</li>
+                <li>Funding and Grants</li>
+                <li>Technical standards</li>
+                <li>Security best practice</li>
+              </ul>
             </div>
           </div>
         </section>
-        <div className="box">
-          <section className="tcb-grid-box">
-            <div className="tcb-grid">
-              <div className="tcb-img">
-                <img src={TrustImg} alt="LegalDocImg" />
-              </div>
-              <div className="text-content-box">
-                <h3>
-                  <span></span> Trust<b>.</b>
-                </h3>
-                <br />
-                <ul>
-                  <li>Certification - transparency, security and ESG</li>
-                  <li>Marketing</li>
-                  <li>Research</li>
-                  <li>Education</li>
-                  <li>Directory listing</li>
-                  <li>Funding and Grants</li>
-                </ul>
-              </div>
-            </div>
-            <div className="tcb-grid">
-              <div className="tcb-img">
-                <img src={TeamworkImg} alt="LegalDocImg" />
-              </div>
-              <div className="text-content-box">
-                <h3>
-                  <span></span> Collaboration<b>.</b>
-                </h3>
-                <br />
-                <ul>
-                  <li>Standards</li>
-                  <li>Events</li>
-                  <li>Training</li>
-                  <li>Jobs listings</li>
-                </ul>
-              </div>
-            </div>
-            <div className="tcb-grid">
-              <div className="tcb-img">
-                <img src={LegalDocImg} alt="LegalDocImg" />
-              </div>
-              <div className="text-content-box">
-                <h3>
-                  <span></span> Legal<b>.</b>
-                </h3>
-                <br />
-                <ul>
-                  <li>Regulation tracking</li>
-                  <li>Lobbying</li>
-                  <li>Contract template and sample clauses</li>
-                  <li>Supporting members facing legal challenges</li>
-                </ul>
-              </div>
-            </div>
-            <div className="tcb-grid">
-              <div className="tcb-img">
-                <img src={BadgeImg} alt="BadgeImg" />
-              </div>
-              <div className="text-content-box">
-                <h3>
-                  <span></span> Best Practice & Standards<b>.</b>
-                </h3>
-                <br />
-                <ul>
-                  <li>Research</li>
-                  <li>Funding and Grants</li>
-                  <li>Technical standards</li>
-                  <li>Security best practice</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-        </div>
-        {/* <div className="box">
+      </div>
+      {/* <div className="box">
           <div className="divider"></div>
         </div> */}
-        {/* <section className="roadmap">
+      {/* <section className="roadmap">
           <div className="box">
             <div className="roadmap-main-box">
               <div className="section-heading-box">
@@ -279,9 +278,8 @@ const OurWork = () => {
             </div>
           </div>
         </section> */}
-        <Footer />
-      </main>
-    </div>
+      <Footer />
+    </main>
   );
 };
 
