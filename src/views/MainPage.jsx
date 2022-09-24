@@ -82,9 +82,27 @@ const MainPage = () => {
                     </div>
                   </div>
                   <div className="header-mob-center">
-                    <Link to="/aboutus">About Us</Link>
-                    <Link to="/ourwork">Our Work</Link>
-                    <Link to="/getinvolved">Get Involved</Link>
+                    <span
+                      onClick={() => {
+                        setIsHeaderMobOpen(false);
+                      }}
+                    >
+                      <Link to="/aboutus">About Us</Link>
+                    </span>
+                    <span
+                      onClick={() => {
+                        setIsHeaderMobOpen(false);
+                      }}
+                    >
+                      <Link to="/ourwork">Our Work</Link>
+                    </span>
+                    <span
+                      onClick={() => {
+                        setIsHeaderMobOpen(false);
+                      }}
+                    >
+                      <Link to="/getinvolved">Get Involved</Link>
+                    </span>
                     <div className="light-dark-switch-box">
                       <span
                         onClick={() => {

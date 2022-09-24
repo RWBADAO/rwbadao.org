@@ -90,6 +90,10 @@ header {
 .header-icon-btn {
   display: none;
 }
+.header-mob-center > span {
+  display: block;
+  margin: 0 0 3.5rem 0;
+}
 @media screen and (max-width: 750px) {
   .header-left img {
     height: 5rem;
@@ -133,7 +137,6 @@ header {
     justify-content: flex-start;
   }
   .header-mob-center a {
-    margin: 0 0 3.5rem 0;
     font-size: 2rem;
     color: var(--text-color);
     text-decoration: none;
