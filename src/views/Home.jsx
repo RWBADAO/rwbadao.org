@@ -45,6 +45,10 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import HeroImg from "../assets/img/HeroImg";
+import WWDImg1 from "../assets/img/WWDImg1";
+import WWDImg2 from "../assets/img/WWDImg2";
+import WWDImg3 from "../assets/img/WWDImg3";
 
 ChartJS.register(
   CategoryScale,
@@ -197,8 +201,8 @@ const Home = () => {
               </h2>
             </div>
             <div className="hero-right">
-              <img className="light-el" src={HeroImgWhite} alt="HeroImg" />
-              <img className="dark-el" src={HeroImgBlack} alt="HeroImg" />
+              <HeroImg color="#fff" className="dark-el" />
+              <HeroImg color="#101216" className="light-el" />
             </div>
           </div>
         </div>
@@ -212,49 +216,11 @@ const Home = () => {
                 <div></div>
               </div>
             </div>
-            {/* <div className="wwd-grid">
-                <div className="wwd-line"></div>
-
-                <div className="wwd-grid-card">
-                  <h4>Build trust</h4>
-                  <img src={WWDImg1White} alt="WWDImg1White" />
-                  <p>
-                    Build trust in innovative projects through certification,
-                    community and financial support
-                  </p>
-                  <div className="wwd-line"></div>
-                </div>
-                <div className="wwd-grid-card">
-                  <h4>Concentrate legal expertise</h4>
-                  <img src={WWDImg2White} alt="WWDImg2White" />
-                  <p>
-                    Concentrate legal expertise and resources to solve legal
-                    ambiguity around asset tokenization
-                  </p>
-                  <div className="wwd-line"></div>
-                </div>
-                <div className="wwd-grid-card">
-                  <h4>Steer collaboration</h4>
-                  <img src={WWDImg3White} alt="WWDImg3White" />
-                  <p>
-                    Steer collaboration of open technical standards to unlock
-                    greater liquidity, accessibility and transparency
-                  </p>
-                  <div className="wwd-line"></div>
-                </div>
-              </div> */}
             <div className="wwd-box">
               <div className="wwd-box-card">
-                <img
-                  className="light-el"
-                  src={WWDImg1White}
-                  alt="WWDImg1White"
-                />
-                <img
-                  className="dark-el"
-                  src={WWDImg1Black}
-                  alt="WWDImg1White"
-                />
+                <WWDImg1 className="light-el" color="#000" />
+                <WWDImg1 className="dark-el" color="#fff" />
+
                 <h4>Build trust</h4>
                 <p>
                   Build trust in innovative projects through certification,
@@ -262,16 +228,8 @@ const Home = () => {
                 </p>
               </div>
               <div className="wwd-box-card">
-                <img
-                  className="light-el"
-                  src={WWDImg2White}
-                  alt="WWDImg2White"
-                />
-                <img
-                  className="dark-el"
-                  src={WWDImg2Black}
-                  alt="WWDImg2White"
-                />
+                <WWDImg2 className="light-el" color="#000" />
+                <WWDImg2 className="dark-el" color="#fff" />
                 <h4>Concentrate legal expertise</h4>
                 <p>
                   Concentrate legal expertise and resources to solve legal
@@ -279,16 +237,8 @@ const Home = () => {
                 </p>
               </div>
               <div className="wwd-box-card">
-                <img
-                  className="light-el"
-                  src={WWDImg3White}
-                  alt="WWDImg3White"
-                />
-                <img
-                  className="dark-el"
-                  src={WWDImg3Black}
-                  alt="WWDImg3White"
-                />
+                <WWDImg3 className="light-el" color="#000" />
+                <WWDImg3 className="dark-el" color="#fff" />
                 <h4>Steer collaboration</h4>
                 <p>
                   Steer collaboration of open technical standards to unlock
