@@ -390,7 +390,11 @@
   .wwd-box-card svg {
     width: 75%;
   }
-  .hero-left h1 br {
-    display: none;
+  .hero-left h1 {
+  }
+  .hero-left h1 span {
+    color: var(--blue-dark);
+    background: unset;
+    padding: 0;
   }
 }
