@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import Footer from "../components/Footer";
 import "../styles/Globals.css";
 import "../styles/views/Home.css";
+import "../styles/views/AboutUs.css";
 
-import HeroImg from "../assets/img/hero-img-white.png";
+import HeroImgWhite from "../assets/img/hero-img-white.png";
+import HeroImgBlack from "../assets/img/hero-img-black.png";
 import WWDImg1White from "../assets/img/wwd-img-1-white.png";
+import WWDImg1Black from "../assets/img/wwd-img-1-black.png";
 import WWDImg2White from "../assets/img/wwd-img-2-white.png";
+import WWDImg2Black from "../assets/img/wwd-img-2-black.png";
 import WWDImg3White from "../assets/img/wwd-img-3-white.png";
+import WWDImg3Black from "../assets/img/wwd-img-3-black.png";
 import TeamworkImg from "../assets/img/teamwork.png";
 import LegalDocImg from "../assets/img/legal-document.png";
-import LogoImg from "../assets/img/logo.png";
+import LogoLight from "../assets/img/logo-light.png";
+import LogoDark from "../assets/img/logo-dark.png";
 import LandxImg from "../assets/img/landx.png";
 import MakerImg from "../assets/img/maker.png";
 import TangibleImg from "../assets/img/tangible.png";
@@ -29,6 +35,54 @@ import {
   MdClose,
 } from "react-icons/md";
 import { Link } from "react-router-dom";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+};
+
+const labels = [
+  "2022",
+  "2023",
+  "2024",
+  "2025",
+  "2026",
+  "2027",
+  "2028",
+  "2029",
+  "2030",
+];
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: "Tokenization Worth",
+      data: [0.31, 0.6, 1.5, 3.1, 5.2, 7.6, 10.2, 13.0, 16.0],
+      borderColor: "#01a5fb",
+      backgroundColor: "#01a5fb",
+      color: "var(red)",
+    },
+  ],
+};
 
 const Home = () => {
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
@@ -41,7 +95,8 @@ const Home = () => {
             <div className="header-content">
               <div className="header-left">
                 <Link to="/">
-                  <img src={LogoImg} alt="" />
+                  <img className="light-el" src={LogoLight} alt="logo" />
+                  <img className="dark-el" src={LogoDark} alt="logo" />
                 </Link>
               </div>
               <div className="header-right">
@@ -86,7 +141,8 @@ const Home = () => {
               <div className="box">
                 <div className="header-mob-content">
                   <div className="header-mob-top">
-                    <img src={LogoImg} alt="" />
+                    <img className="light-el" src={LogoLight} alt="logo" />
+                    <img className="dark-el" src={LogoDark} alt="logo" />
                     <div
                       className="header-icon-btn"
                       onClick={() => {
@@ -142,7 +198,8 @@ const Home = () => {
                 </h2>
               </div>
               <div className="hero-right">
-                <img src={HeroImg} alt="HeroImg" />
+                <img className="light-el" src={HeroImgWhite} alt="HeroImg" />
+                <img className="dark-el" src={HeroImgBlack} alt="HeroImg" />
               </div>
             </div>
           </div>
@@ -156,7 +213,7 @@ const Home = () => {
                   <div></div>
                 </div>
               </div>
-              <div className="wwd-grid">
+              {/* <div className="wwd-grid">
                 <div className="wwd-line"></div>
 
                 <div className="wwd-grid-card">
@@ -186,8 +243,175 @@ const Home = () => {
                   </p>
                   <div className="wwd-line"></div>
                 </div>
+              </div> */}
+              <div className="wwd-box">
+                <div className="wwd-box-card">
+                  <img
+                    className="light-el"
+                    src={WWDImg1White}
+                    alt="WWDImg1White"
+                  />
+                  <img
+                    className="dark-el"
+                    src={WWDImg1Black}
+                    alt="WWDImg1White"
+                  />
+                  <h4>Build trust</h4>
+                  <p>
+                    Build trust in innovative projects through certification,
+                    community and financial support
+                  </p>
+                </div>
+                <div className="wwd-box-card">
+                  <img
+                    className="light-el"
+                    src={WWDImg2White}
+                    alt="WWDImg2White"
+                  />
+                  <img
+                    className="dark-el"
+                    src={WWDImg2Black}
+                    alt="WWDImg2White"
+                  />
+                  <h4>Concentrate legal expertise</h4>
+                  <p>
+                    Concentrate legal expertise and resources to solve legal
+                    ambiguity around asset tokenization
+                  </p>
+                </div>
+                <div className="wwd-box-card">
+                  <img
+                    className="light-el"
+                    src={WWDImg3White}
+                    alt="WWDImg3White"
+                  />
+                  <img
+                    className="dark-el"
+                    src={WWDImg3Black}
+                    alt="WWDImg3White"
+                  />
+                  <h4>Steer collaboration</h4>
+                  <p>
+                    Steer collaboration of open technical standards to unlock
+                    greater liquidity, accessibility and transparency
+                  </p>
+                </div>
               </div>
               <button className="blue-btn">Become a Member</button>
+            </div>
+          </div>
+        </section>
+        <section className="home-text-con">
+          <div className="box">
+            <div className="text-content-box">
+              <h3>
+                <span></span> What are real world assets<b>?</b>
+              </h3>
+              <br />
+              <p>
+                Tokenization of real world assets involves the digital
+                representation of real world (usually physical) assets on a
+                blockchain.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>
+                <b>Popular examples include:</b>
+              </p>
+              <br />
+
+              <ul>
+                <li>
+                  Commodities – gold, silver, diamonds, wheat, rice, copper
+                </li>
+                <li>
+                  Real estate – legal ownership of land, homes, and offices
+                </li>
+                <li>
+                  Stock or equity – crypto versions of traditional stocks or
+                  part of a private business
+                </li>
+              </ul>
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>
+                Cryptocurrencies such as Bitcoin or Ethereum would not be
+                considered real world assets. However, stablecoins based on real
+                world fiat currencies or gold are growing rapidly.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>
+                <b>This process usually involves:</b>
+              </p>
+              <br />
+              <ul>
+                <li>Linking an NFT (digital token) to a physical asset</li>
+                <li>Allowing the trading of assets with NFTs</li>
+              </ul>
+            </div>
+            <div className="text-content-box">
+              <h3>
+                <span></span> Why tokenize real world assets<b>?</b>
+              </h3>
+              <br />
+              <br />
+              <p>
+                There are several advantages to bringing real-world assets onto
+                the blockchain.
+              </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <p>
+                {" "}
+                <b>They include:</b>{" "}
+              </p>
+              <br />
+              <ul>
+                <li>
+                  Increased accessibility - increasing the total addressable
+                  market and revenue opportunities for issuers of real-world
+                  assets
+                </li>
+                <li>Boost transparency of asset usage and market risk</li>
+                <li>
+                  Equality – broaden financial access to the underbanked
+                  population underserved by traditional finance
+                </li>
+              </ul>
+              <br />
+              <br />
+            </div>
+            <div className="text-content-box">
+              <h3>
+                <span></span> The Tokenization opportunity<b>.</b>
+              </h3>
+              <br />
+              <br />
+              <p>
+                The total size of tokenized illiquid assets, including real
+                estate and natural resources could reach $16.1 trillion by 2030.
+                <br />
+                In a best-case scenario, that estimate goes up to US$68
+                trillion.
+              </p>
+            </div>
+            <div className="home-chart-box">
+              <h4>
+                Tokenization of global iliquid assets estimated to be a $16
+                Trillion business opportunity by 2030
+              </h4>
+              <div className="chart-box">
+                <Bar options={options} data={data} />
+              </div>
             </div>
           </div>
         </section>

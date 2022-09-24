@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/components/header.css";
-import LogoImg from "../assets/img/logo.png";
+import LogoLight from "../assets/img/logo-light.png";
+import LogoDark from "../assets/img/logo-dark.png";
 import {
   MdOutlineLightMode,
   MdOutlineDarkMode,
@@ -16,7 +17,8 @@ const Header = (props) => {
       <div className="box">
         <div className="header-content">
           <div className="header-left">
-            <img src={LogoImg} alt="" />
+            <img className="light-el" src={LogoLight} alt="logo" />
+            <img className="dark-el" src={LogoDark} alt="logo" />
           </div>
           <div className="header-right">
             <a href="#">About Us</a>
@@ -46,7 +48,8 @@ const Header = (props) => {
           <div className="box">
             <div className="header-mob-content">
               <div className="header-mob-top">
-                <img src={LogoImg} alt="" />
+                <img className="light-el" src={LogoLight} alt="logo" />
+                <img className="dark-el" src={LogoDark} alt="logo" />
                 <div
                   className="header-icon-btn"
                   onClick={() => {

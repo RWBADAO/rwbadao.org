@@ -9,8 +9,8 @@
   font-size: 10px;
 }
 .light-theme {
-  --bg-main: #f7f8f9;
-  --bg-main2: #fff;
+  --bg-main: #fff;
+  --bg-main2: #f7f8f9;
   --blue-light: #00baf7;
   --blue-dark: #01a5fb;
   --text-color2: #131313;
@@ -197,7 +197,18 @@ body {
 p {
   font-weight: 300 !important;
 }
-
+.light-theme .dark-el {
+  display: none;
+}
+.light-theme .light-el {
+  display: block;
+}
+.dark-theme .dark-el {
+  display: block;
+}
+.dark-theme .light-el {
+  display: none;
+}
 @media screen and (max-width: 750px) {
   .box {
     padding: 0 2.5rem;

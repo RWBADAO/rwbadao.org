@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Globals.css";
 import "../styles/views/AboutUs.css";
-import LogoImg from "../assets/img/logo.png";
+import LogoLight from "../assets/img/logo-light.png";
+import LogoDark from "../assets/img/logo-dark.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TrustImg from "../assets/img/trust.png";
@@ -27,7 +28,8 @@ const OurWork = () => {
             <div className="header-content">
               <div className="header-left">
                 <Link to="/">
-                  <img src={LogoImg} alt="" />
+                  <img className="light-el" src={LogoLight} alt="logo" />
+                  <img className="dark-el" src={LogoDark} alt="logo" />
                 </Link>
               </div>
               <div className="header-right">
@@ -72,7 +74,8 @@ const OurWork = () => {
               <div className="box">
                 <div className="header-mob-content">
                   <div className="header-mob-top">
-                    <img src={LogoImg} alt="" />
+                    <img className="light-el" src={LogoLight} alt="logo" />
+                    <img className="dark-el" src={LogoDark} alt="logo" />
                     <div
                       className="header-icon-btn"
                       onClick={() => {

@@ -3,7 +3,8 @@ import React from "react";
 // Styles
 import "../styles/Globals.css";
 import "../styles/components/footer.css";
-import LogoImg from "../assets/img/logo.png";
+import LogoLight from "../assets/img/logo-light.png";
+import LogoDark from "../assets/img/logo-dark.png";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import { MdEast, MdNorth } from "react-icons/md";
 import { FaTwitter, FaDiscord, FaGlobe } from "react-icons/fa";
@@ -17,7 +18,8 @@ const Footer = () => {
       <div className="box">
         <div className="footer-grid">
           <div className="footer-grid-card-1">
-            <img src={LogoImg} alt="LogoImg" />
+            <img className="light-el" src={LogoLight} alt="logo" />
+            <img className="dark-el" src={LogoDark} alt="logo" />
           </div>
           <div></div>
           <div className="footer-grid-card-4">

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../styles/Globals.css";
 import "../styles/views/AboutUs.css";
-import LogoImg from "../assets/img/logo.png";
+import LogoLight from "../assets/img/logo-light.png";
+import LogoDark from "../assets/img/logo-dark.png";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import EmblemImg from "../assets/img/emblem.png";
 import Footer from "../components/Footer";
 import {
   MdOutlineLightMode,
@@ -22,7 +24,8 @@ const AboutUs = () => {
             <div className="header-content">
               <div className="header-left">
                 <Link to="/">
-                  <img src={LogoImg} alt="" />
+                  <img className="light-el" src={LogoLight} alt="logo" />
+                  <img className="dark-el" src={LogoDark} alt="logo" />
                 </Link>
               </div>
               <div className="header-right">
@@ -67,7 +70,8 @@ const AboutUs = () => {
               <div className="box">
                 <div className="header-mob-content">
                   <div className="header-mob-top">
-                    <img src={LogoImg} alt="" />
+                    <img className="light-el" src={LogoLight} alt="logo" />
+                    <img className="dark-el" src={LogoDark} alt="logo" />
                     <div
                       className="header-icon-btn"
                       onClick={() => {
@@ -308,6 +312,41 @@ const AboutUs = () => {
                   around shared objectives.
                 </h5>
               </div>
+            </div>
+          </div>
+        </section>
+        <div className="box">
+          <div className="divider"></div>
+        </div>
+        <section className="certification-section">
+          <div className="box">
+            <div className="contact-content">
+              <div className="section-heading-box">
+                <div className="section-heading">
+                  <h3>certification.</h3>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div className="text-content-box">
+              <p>
+                Members are encouraged to uphold the values of the association
+                in regards to:-
+              </p>
+              <br /> <br />
+              <ul>
+                <li>Environmental impact</li>
+                <li>Transparency & open source code</li>
+                <li>Operating standards & ethics</li>
+              </ul>
+              <br />
+              <br />
+              <p>
+                We provide certification for the members that share our values
+                and encourage the use of our certification emblem on websites
+                and promotional materials.
+              </p>
+              <img src={EmblemImg} alt="EmblemImg" />
             </div>
           </div>
         </section>

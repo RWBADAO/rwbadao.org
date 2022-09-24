@@ -17,7 +17,7 @@ header {
   width: max-content;
 }
 .header-left img {
-  height: 5rem;
+  height: 7.5rem;
 }
 .header-right {
   width: max-content;
@@ -91,6 +91,9 @@ header {
   display: none;
 }
 @media screen and (max-width: 750px) {
+  .header-left img {
+    height: 5rem;
+  }
   .text-content-box h3 span {
     width: 1.5rem;
   }
