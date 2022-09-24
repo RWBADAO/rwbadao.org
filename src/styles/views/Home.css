@@ -104,6 +104,12 @@
   margin: 1.5rem 0;
   width: 1px;
 }
+.df {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .blue-btn {
   display: flex;
   justify-content: center;
@@ -117,6 +123,8 @@
   border: 0;
   outline: 0;
   background: var(--blue-dark);
+  width: max-content;
+  text-decoration: none;
 }
 .founding-members {
   width: 100%;
@@ -255,7 +263,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 15rem;
-  margin: 0 0 5rem 0;
+  margin: 0 0 7.5rem 0;
 }
 .wwd-box-card {
   width: 100%;
@@ -285,7 +293,17 @@
 }
 .home-text-con {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 0 0 7.5rem 0;
+}
+.contact-btn-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem 0 5rem 0;
+}
+.no-padding {
+  padding: 0 !important;
 }
 .home-chart-box {
   width: 100%;
@@ -366,5 +384,8 @@
   }
   .wwd-grid-card p {
     width: 80%;
+  }
+  .wwd-box-card img {
+    width: 75%;
   }
 }

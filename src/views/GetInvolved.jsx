@@ -326,16 +326,20 @@ const GetInvolved = () => {
                 </p>
               </div>
             </div>
-            <p className="p-p">
-              To purchase a membership please complete the following:
-              $GoogleFormsLink{" "}
-            </p>
             <br />
             <p className="p-p">
               Fees are payable in USDC however in certain circumstances we can
               accept up to 20% in a project’s native governance tokens.
             </p>
-            <button className="blue-btn">Become a Member</button>
+            <div className="df">
+              <a
+                target="_blank"
+                href="https://app.daohaus.club/dao/0x1/0x627d18182eabc1d5d87e1446b802615f2d12a44e"
+                className="blue-btn"
+              >
+                Become a Member
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -360,6 +364,9 @@ const GetInvolved = () => {
             <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <textarea placeholder="Message"></textarea>
+          </div>
+          <div className="contact-btn-box">
+            <button className="blue-btn">Contact</button>
           </div>
           <p className="p-p">You can also reach out via the social channels</p>
           <div className="social-grid">

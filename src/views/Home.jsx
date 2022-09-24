@@ -75,7 +75,7 @@ export const data = {
   labels,
   datasets: [
     {
-      label: "Tokenization Worth",
+      label: "Total Tokenized Market",
       data: [0.31, 0.6, 1.5, 3.1, 5.2, 7.6, 10.2, 13.0, 16.0],
       borderColor: "#01a5fb",
       backgroundColor: "#01a5fb",
@@ -296,7 +296,15 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <button className="blue-btn">Become a Member</button>
+            <div className="df">
+              <a
+                target="_blank"
+                href="https://app.daohaus.club/dao/0x1/0x627d18182eabc1d5d87e1446b802615f2d12a44e"
+                className="blue-btn"
+              >
+                Become a Member
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -385,7 +393,7 @@ const Home = () => {
             <br />
             <br />
           </div>
-          <div className="text-content-box">
+          <div className="text-content-box no-padding">
             <h3>
               <span></span> The Tokenization opportunity<b>.</b>
             </h3>
