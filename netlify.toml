@@ -2,3 +2,4 @@
   command = "npm run build"
   function = "functions/"
   publish = "build/"
+  environment = { NPM_FLAGS = "--legacy-peer-deps" }
