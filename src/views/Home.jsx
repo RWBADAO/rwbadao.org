@@ -403,7 +403,6 @@ const Home = () => {
                       <img src={LandxImg} alt="founding member img" />
                     </div>
                   </SwiperSlide>
-            <!--
                   <SwiperSlide>
                     <div className="fm-img-box">
                       <img src={MakerImg} alt="founding member img" />
@@ -414,7 +413,6 @@ const Home = () => {
                       <img src={TangibleImg} alt="founding member img" />
                     </div>
                   </SwiperSlide>
-             -->
                 </Swiper>
               </div>
               <div className="fm-arrow-box fm-next">
