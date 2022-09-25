@@ -404,9 +404,11 @@ const Home = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="fm-img-box">
+          <!-- 
+                        <div className="fm-img-box">
                       <img src={MakerImg} alt="founding member img" />
                     </div>
+          -->
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="fm-img-box">
