@@ -196,7 +196,7 @@ const Home = () => {
                 <span>Real World Assets</span>
               </h1>
               <h2>
-                Our DAO unites groundbreaking projects that will shape a $200
+                Our DAO unites groundbreaking projects that will shape a $20+
                 trillion shared opportunity.
               </h2>
             </div>
