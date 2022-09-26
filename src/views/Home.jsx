@@ -394,23 +394,13 @@ const Home = () => {
                   modules={[Navigation, Pagination]}
                   breakpoints={{
                     700: {
-                      slidesPerView: 3,
+                      slidesPerView: 1,
                     },
                   }}
                 >
                   <SwiperSlide>
                     <div className="fm-img-box">
                       <img src={LandxImg} alt="founding member img" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="fm-img-box">
-                      <img src={MakerImg} alt="founding member img" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="fm-img-box">
-                      <img src={TangibleImg} alt="founding member img" />
                     </div>
                   </SwiperSlide>
                 </Swiper>
