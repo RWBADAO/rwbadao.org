@@ -426,13 +426,10 @@ const Home = () => {
               contribution towards further tokenization of real world assets.
             </p>
             <div className="icons-box">
-              <a href="#">
+              <a href="https://twitter.com/rwbaDAO">
                 <FaTwitter />
               </a>
-              <a href="#">
-                <FaDiscord />
-              </a>
-              <a href="#">
+              <a href="https://rwbadao.org">
                 <FaGlobe />
               </a>
             </div>

@@ -30,13 +30,10 @@ const Footer = () => {
               </button>
             </div>
             <div className="footer-icons-box">
-              <a href="#">
+              <a href="https://twitter.com/rwbaDAO">
                 <FaTwitter />
               </a>
-              <a href="#">
-                <FaDiscord />
-              </a>
-              <a href="#">
+              <a href="https://rwbadao.org">
                 <FaGlobe />
               </a>
             </div>
@@ -45,8 +42,7 @@ const Footer = () => {
         <div className="footer-con">
           <p className="footer-p">© 2022 RWBA DAO</p>
           <div className="footer-links-box">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+
           </div>
         </div>
       </div>
