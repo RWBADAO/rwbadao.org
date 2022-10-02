@@ -16,6 +16,11 @@ import Home from "./views/Home";
 import GetInvolved from "./views/GetInvolved";
 import OurWork from "./views/OurWork";
 
+// Google Tag Manager Setup https://github.com/alinemorelli/react-gtm
+import TagManager from "react-gtm-module";
+const tagManagerArgs = { gtmId: 'GTM-TPG6HBP' }
+TagManager.initialize(tagManagerArgs)
+
 function App() {
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   const [isLightTheme, setIsLightTheme] = useState(true);

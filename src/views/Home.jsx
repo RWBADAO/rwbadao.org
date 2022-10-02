@@ -429,7 +429,7 @@ const Home = () => {
               <a href="https://twitter.com/rwbaDAO">
                 <FaTwitter />
               </a>
-              <a href="https://discord.gg/bewdyfhx">
+              <a href="https://discord.gg/827DYeV6qB">
                 <FaDiscord />
               </a>
               <a href="https://rwbadao.org">
