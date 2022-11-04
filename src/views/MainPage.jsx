@@ -9,6 +9,7 @@ import {
   MdClose,
 } from "react-icons/md";
 import AboutUs from "./AboutUs";
+import RWA from "./RWA";
 import Home from "./Home";
 import GetInvolved from "./GetInvolved";
 import OurWork from "./OurWork";
@@ -29,7 +30,11 @@ const MainPage = () => {
                 </Link>
               </div>
               <div className="header-right">
+                <div className="newsletter-top">
+                  <div className="ml-embedded" data-form="neQEXd"></div>
+                </div>
                 <Link to="/aboutus">About Us</Link>
+                <Link to="/rwa">RWA</Link>
                 <Link to="/ourwork">Our Work</Link>
                 <Link to="/getinvolved">Get Involved</Link>
                 <div className="light-dark-switch-box">
@@ -94,6 +99,13 @@ const MainPage = () => {
                         setIsHeaderMobOpen(false);
                       }}
                     >
+                      <Link to="/rwa">RWA</Link>
+                    </span>
+                    <span
+                      onClick={() => {
+                        setIsHeaderMobOpen(false);
+                      }}
+                    >
                       <Link to="/ourwork">Our Work</Link>
                     </span>
                     <span
@@ -134,6 +146,7 @@ const MainPage = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/rwa" element={<RWA />} />
           <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/ourwork" element={<OurWork />} />
         </Routes>

@@ -19,7 +19,7 @@ import LogoDark from "../assets/img/logo-dark.png";
 import LandxImg from "../assets/img/landx.png";
 import MakerImg from "../assets/img/maker.png";
 import TangibleImg from "../assets/img/tangible.png";
-import { FaTwitter, FaDiscord, FaGlobe } from "react-icons/fa";
+import { FaTwitter, FaDiscord, FaGlobe, FaEnvelope } from "react-icons/fa";
 import { MdEast, MdWest } from "react-icons/md";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -258,115 +258,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="home-text-con">
-        <div className="box">
-          <div className="text-content-box">
-            <h3>
-              <span></span> What are real world assets<b>?</b>
-            </h3>
-            <br />
-            <p>
-              Tokenization of real world assets involves the digital
-              representation of real world (usually physical) assets on a
-              blockchain.
-            </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-              <b>Popular examples include:</b>
-            </p>
-            <br />
-
-            <ul>
-              <li>Commodities – gold, silver, diamonds, wheat, rice, copper</li>
-              <li>Real estate – legal ownership of land, homes, and offices</li>
-              <li>
-                Stock or equity – crypto versions of traditional stocks or part
-                of a private business
-              </li>
-            </ul>
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-              Cryptocurrencies such as Bitcoin or Ethereum would not be
-              considered real world assets. However, stablecoins based on real
-              world fiat currencies or gold are growing rapidly.
-            </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-              <b>This process usually involves:</b>
-            </p>
-            <br />
-            <ul>
-              <li>Linking an NFT (digital token) to a physical asset</li>
-              <li>Allowing the trading of assets with NFTs</li>
-            </ul>
-          </div>
-          <div className="text-content-box">
-            <h3>
-              <span></span> Why tokenize real world assets<b>?</b>
-            </h3>
-            <br />
-            <br />
-            <p>
-              There are several advantages to bringing real-world assets onto
-              the blockchain.
-            </p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-              {" "}
-              <b>They include:</b>{" "}
-            </p>
-            <br />
-            <ul>
-              <li>
-                Increased accessibility - increasing the total addressable
-                market and revenue opportunities for issuers of real-world
-                assets
-              </li>
-              <li>Boost transparency of asset usage and market risk</li>
-              <li>
-                Equality – broaden financial access to the underbanked
-                population underserved by traditional finance
-              </li>
-            </ul>
-            <br />
-            <br />
-          </div>
-          <div className="text-content-box no-padding">
-            <h3>
-              <span></span> The Tokenization opportunity<b>.</b>
-            </h3>
-            <br />
-            <br />
-            <p>
-              The total size of tokenized illiquid assets, including real estate
-              and natural resources could reach $16.1 trillion by 2030.
-              <br />
-              In a best-case scenario, that estimate goes up to US$68 trillion.
-            </p>
-          </div>
-          <div className="home-chart-box">
-            <h4>
-              Tokenization of global iliquid assets estimated to be a $16
-              Trillion business opportunity by 2030
-            </h4>
-            <div className="chart-box">
-              <Bar options={options} data={data} />
-            </div>
-          </div>
-        </div>
-      </section>
+      
       <section className="founding-members">
         <div className="box">
           <div className="section-heading-box">
@@ -418,8 +310,18 @@ const Home = () => {
             <div className="section-heading-box">
               <div className="section-heading">
                 <h3>Join the real world community.</h3>
-                <div></div>
               </div>
+            </div>
+            <p>
+              Connect with our community on <a href="https://twitter.com/rwbaDAO">Twitter</a> &amp; <a href="https://discord.gg/827DYeV6qB">Discord</a>
+            </p>
+            <br /><br />
+            <p>
+              If you are interested in joining the DAO then complete the application and a representative will contact you
+            </p>
+            <br /><br />
+            <div className="form-container">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczmiZUxovRorbRp7nfbNQG9MeOLUj9LG4zgaUj9RMeCSiMRw/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
             <p>
               Start learning more, connect with DAO members and make your
@@ -432,8 +334,8 @@ const Home = () => {
               <a href="https://discord.gg/827DYeV6qB">
                 <FaDiscord />
               </a>
-              <a href="https://rwbadao.org">
-                <FaGlobe />
+              <a href="mailto:info@rwbadao.org">
+                <FaEnvelope />
               </a>
             </div>
           </div>

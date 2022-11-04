@@ -7,7 +7,7 @@ import LogoLight from "../assets/img/logo-light.png";
 import LogoDark from "../assets/img/logo-dark.png";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import { MdEast, MdNorth } from "react-icons/md";
-import { FaTwitter, FaDiscord, FaGlobe } from "react-icons/fa";
+import { FaTwitter, FaDiscord, FaGlobe, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,14 +21,10 @@ const Footer = () => {
             <img className="light-el" src={LogoLight} alt="logo" />
             <img className="dark-el" src={LogoDark} alt="logo" />
           </div>
-          <div></div>
           <div className="footer-grid-card-4">
-            <div className="footer-subscribe-box">
-              <input type="email" placeholder="Sign up For Our Newsletter" />
-              <button>
-                <MdEast />
-              </button>
-            </div>
+
+            <div className="ml-embedded" data-form="neQEXd"></div>
+
             <div className="footer-icons-box">
               <a href="https://twitter.com/rwbaDAO">
                 <FaTwitter />
@@ -36,8 +32,8 @@ const Footer = () => {
               <a href="https://discord.gg/827DYeV6qB">
                 <FaDiscord />
               </a>
-              <a href="https://rwbadao.org">
-                <FaGlobe />
+              <a href="mailto:info@rwbadao.org">
+                <FaEnvelope />
               </a>
             </div>
           </div>

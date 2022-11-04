@@ -209,6 +209,10 @@ p {
 .dark-theme .light-el {
   display: none;
 }
+.form-container {
+  height: 700px;
+  display: block;
+}
 @media screen and (max-width: 750px) {
   .box {
     padding: 0 2.5rem;

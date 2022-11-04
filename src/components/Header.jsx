@@ -22,6 +22,7 @@ const Header = (props) => {
           </div>
           <div className="header-right">
             <a href="#">About Us</a>
+            <a href="#">RWA</a>
             <a href="#">Our Work</a>
             <a href="#">Get Involved</a>
             <div className="light-dark-switch-box">
@@ -61,6 +62,7 @@ const Header = (props) => {
               </div>
               <div className="header-mob-center">
                 <a href="#">About Us</a>
+                <a href="#">RWA</a>
                 <a href="#">Our Work</a>
                 <a href="#">Get Involved</a>
                 <div className="light-dark-switch-box">
