@@ -327,17 +327,7 @@ const Home = () => {
               Start learning more, connect with DAO members and make your
               contribution towards further tokenization of real world assets.
             </p>
-            <div className="icons-box">
-              <a href="https://twitter.com/rwbaDAO">
-                <FaTwitter />
-              </a>
-              <a href="https://discord.gg/827DYeV6qB">
-                <FaDiscord />
-              </a>
-              <a href="mailto:info@rwbadao.org">
-                <FaEnvelope />
-              </a>
-            </div>
+            
           </div>
         </div>
       </section>
