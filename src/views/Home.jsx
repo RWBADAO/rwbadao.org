@@ -275,7 +275,7 @@ const Home = () => {
               <div className="fm-grid-swiper">
                 <Swiper
                   slidesPerView={"auto"}
-                  spaceBetween={50}
+                  spaceBetween={250}
                   className="mySwiper"
                   loop={true}
                   navigation={{
@@ -321,7 +321,7 @@ const Home = () => {
             </p>
             <br /><br />
             <div className="form-container">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczmiZUxovRorbRp7nfbNQG9MeOLUj9LG4zgaUj9RMeCSiMRw/viewform?embedded=true" width="640" height="677" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczmiZUxovRorbRp7nfbNQG9MeOLUj9LG4zgaUj9RMeCSiMRw/viewform?embedded=true" width="320" height="740" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
             </div>
             <p>
               Start learning more, connect with DAO members and make your
