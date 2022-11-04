@@ -30,9 +30,6 @@ const MainPage = () => {
                 </Link>
               </div>
               <div className="header-right">
-                <div className="newsletter-top">
-                  <div className="ml-embedded" data-form="neQEXd"></div>
-                </div>
                 <Link to="/aboutus">About Us</Link>
                 <Link to="/rwa">RWA</Link>
                 <Link to="/ourwork">Our Work</Link>

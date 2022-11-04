@@ -22,9 +22,7 @@ const Footer = () => {
             <img className="dark-el" src={LogoDark} alt="logo" />
           </div>
           <div className="footer-grid-card-4">
-
             <div className="ml-embedded" data-form="neQEXd"></div>
-
             <div className="footer-icons-box">
               <a href="https://twitter.com/rwbaDAO">
                 <FaTwitter />
