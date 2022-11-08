@@ -88,6 +88,10 @@ export const data = {
   ],
 };
 
+const loadForm = () => {
+  window.open('https://forms.gle/pGE4ZdwWixsZ8Ct48', '_blank', 'noopener,noreferrer');
+}
+
 const Home = () => {
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   const [isLightTheme, setIsLightTheme] = useState(true);
@@ -247,13 +251,7 @@ const Home = () => {
               </div>
             </div>
             <div className="df">
-              <a
-                target="_blank"
-                href="https://app.daohaus.club/dao/0x1/0x627d18182eabc1d5d87e1446b802615f2d12a44e"
-                className="blue-btn"
-              >
-                Become a Member
-              </a>
+            <button className="blue-btn" onClick={loadForm}>Become A Member</button>
             </div>
           </div>
         </div>
@@ -321,8 +319,9 @@ const Home = () => {
             </p>
             <br /><br />
             <div className="form-container">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczmiZUxovRorbRp7nfbNQG9MeOLUj9LG4zgaUj9RMeCSiMRw/viewform?embedded=true" width="320" height="740" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+              <button className="blue-btn" onClick={loadForm}>DAO Application Form</button>
             </div>
+            <br /><br />
             <p>
               Start learning more, connect with DAO members and make your
               contribution towards further tokenization of real world assets.

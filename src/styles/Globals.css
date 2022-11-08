@@ -210,8 +210,10 @@ p {
   display: none;
 }
 .form-container {
-  height: 760px;
   display: block;
+}
+.top-newsletter {
+  padding-top: 18px; 
 }
 @media screen and (max-width: 750px) {
   .box {
@@ -238,5 +240,8 @@ p {
   }
   .text-content-box h3 {
     font-size: 2.75rem;
+  }
+  .mobile-hidden {
+    display: none;
   }
 }

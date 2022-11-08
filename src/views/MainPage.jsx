@@ -56,6 +56,9 @@ const MainPage = () => {
                     <MdOutlineDarkMode />
                   </span>
                 </div>
+                <div className="mobile-hidden top-newsletter">
+                  <iframe src="https://rwba.substack.com/embed" width="300" height="80" frameBorder="0" scrolling="no"></iframe>
+                </div>
                 <div
                   className="header-icon-btn"
                   onClick={() => {

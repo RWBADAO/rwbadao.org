@@ -21,8 +21,10 @@ const Footer = () => {
             <img className="light-el" src={LogoLight} alt="logo" />
             <img className="dark-el" src={LogoDark} alt="logo" />
           </div>
-          <div className="footer-grid-card-4">
-            <div className="ml-embedded" data-form="neQEXd"></div>
+          <div className="footer-grid-card-1">
+
+            <iframe src="https://rwba.substack.com/embed" width="300" height="120" frameBorder="0" scrolling="no"></iframe>
+
             <div className="footer-icons-box">
               <a href="https://twitter.com/rwbaDAO">
                 <FaTwitter />
