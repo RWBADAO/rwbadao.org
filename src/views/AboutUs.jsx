@@ -341,7 +341,7 @@ const AboutUs = () => {
             <br />
             <br />
             <p>
-              We offer certification for the members that share our values and
+              We provide certification for the members that share our values and
               encourage the use of our certification emblem on websites and
               promotional materials.
             </p>
